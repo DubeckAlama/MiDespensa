@@ -1,0 +1,136 @@
+body {
+  background-color: #efefef;
+}
+
+/*contenido de formulario*/
+section .content-general {
+  width: 100%;
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 18px;
+}
+
+section .box-content {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 570px;
+  padding: 70px 80px 20px 80px;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+}
+
+section .logo {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100px;
+}
+section .logo .logo-container {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  box-shadow: 0 0.3rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+section .logo .logo-container img {
+  width: 58px;
+  position: absolute;
+  top: 56%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+}
+
+section .content-general h4 {
+  color: #e62b4d;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+/*------------------------------*/
+section .content-general .row .col-1 {
+  width: 10px;
+  color: #828282;
+  padding-top: 7px;
+}
+section .content-general i {
+  font-size: 17px;
+}
+section .content-general .field {
+  margin-left: 5px;
+  border-bottom: 2px solid #ef7087;
+  position: relative;
+  background-color: white;
+  margin-bottom: 6px;
+}
+
+section .content-general .field input {
+  font-size: 16px;
+  padding: 8px 10px 8px 36px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+section .content-general .field input:focus {
+  outline: none;
+  background-color: #efefef;
+}
+
+section .content-general .field .icon-mean {
+  position: absolute;
+  top: 0;
+  width: 24px;
+  left: 0;
+  height: calc(100% - 2px);
+  display: flex;
+  align-items: center;
+  padding-left: 6px;
+  justify-content: flex-start;
+}
+
+section .content-general .field .icon-mean i {
+  font-size: 18px;
+  color: #989898;
+  transition: all 0.6s;
+}
+
+section .content-general .field input:focus ~ .icon-mean i {
+  transform: translateX(4px);
+  color: #910000;
+}
+
+/*------------------------------*/
+section .content-general .ayuda {
+  padding: 20px 0;
+}
+section .content-general .ayuda a {
+  color: #828282;
+  line-height: 30px;
+}
+
+section .content-general button {
+  width: 226px;
+  border-radius: 50px;
+  font-size: 17px;
+  height: 48px;
+  margin: 12px;
+}
+section .box-content strong {
+  font-size: 19px;
+}
+section .content-general .text-center .btn-danger {
+  --bs-btn-bg: #e2032b !important;
+}
+section .content-general .text-center .btn-outline-danger {
+  width: 226px;
+  border-radius: 50px;
+  font-size: 17px;
+  padding: 9px;
+  margin: 12px;
+  font-weight: bold;
+  --bs-btn-hover-bg: #e2032b !important;
+  --bs-btn-border-width: 0.121rem;
+  --bs-btn-border-color: #e2032b !important;
+}

@@ -1,0 +1,474 @@
+<ng-container [ngSwitch]="typeProduct">
+  <ng-container *ngSwitchCase="'marketing'">
+    <!-- marketing -->
+    <div class="{{ typeCardProduct }}">
+      <div class="pro-imagen">
+        <img src="/assets/images/product-loader.svg" alt="" />
+      </div>
+      <div class="pro-detalles">
+        <div class="row">
+          <div class="col-10 text-start">
+            <h6 class="numbers">
+              Gomitas Ambrosito <br />
+              AMBROSOLI x 100g
+            </h6>
+          </div>
+          <div class="col-1 {{ heartStyle }}">
+            <i class="fa-regular fa-heart fz-28"></i>
+          </div>
+        </div>
+        <div class="btn-accss">
+          <button
+            class="btn btn-primary {{ markStyle }}"
+            data-bs-toggle="modal"
+            attr.data-bs-target="#{{idModal}}"
+          >
+            {{ titleButton }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchCase="'points'">
+    <!-- my-points -->
+    <div class="{{ typeCardProduct }}">
+      <div class="pro-imagen">
+        <img [src]="product.image" alt="" />
+      </div>
+      <div class="pro-detalles">
+        <div class="row">
+          <div class="col-10 text-start">
+            <h6>
+              {{ product.name | titlecase }} <br />
+              {{ product.trademark | uppercase }} x {{ product.measure }}
+            </h6>
+          </div>
+          <div class="col-1">
+            <i class="{{ typeHeart }} fa-heart"></i>
+          </div>
+        </div>
+        <p class="punto-acumulados">{{ 500 }} pts</p>
+        <div class="btn-accss text-center btn-agregar">
+          <a type="button" class="btn btn-outline-danger">Agregar</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container *ngSwitchDefault>
+    <!-- card main -->
+    <div class="{{ typeCardProduct }}">
+      <div class="gift-verde {{ gifStyle }}">
+        <i class="fa fa-gift fa-fw"></i>
+        <span
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#promotions_gif"
+          >Ver 3 promociones más
+          <div class="cerrar-gift"><i class="fa fa-times"></i></div
+        ></span>
+      </div>
+      <div class="pro-imagen">
+        <img [src]="product.image" alt="" />
+      </div>
+      <div class="pro-detalles">
+        <div class="row">
+          <div class="col-10 text-start">
+            <h6>
+              {{ product.name | titlecase }} <br />
+              {{ product.trademark | uppercase }} x {{ product.measure }}
+            </h6>
+          </div>
+          <div class="col-1">
+            <i class="{{ typeHeart }} fa-heart"></i>
+          </div>
+        </div>
+        <p>{{ product.price | currency : "S/ " }}</p>
+        <div class="btn-accss text-center btn-agregar">
+          <a type="button" class="btn btn-outline-danger">Agregar</a>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</ng-container>
+
+<!-- modal gif -->
+<div class="modal" tabindex="-1" id="promotions_gif">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button
+            class="nav-link active"
+            id="nav-descuent-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-descuent"
+            type="button"
+            role="tab"
+            aria-controls="nav-descuent"
+            aria-selected="true"
+          >
+            Descuentos
+          </button>
+          <button
+            class="nav-link"
+            id="nav-bonificacio-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nav-bonificacio"
+            type="button"
+            role="tab"
+            aria-controls="nav-bonificacio"
+            aria-selected="false"
+          >
+            Bonificaciones
+          </button>
+          <div class="cerrar-modal" data-bs-dismiss="modal">
+            <i class="fa fa-times icono-cerrar"></i>
+          </div>
+        </div>
+      </nav>
+      <div class="tab-content" id="nav-tabContent">
+        <div
+          class="tab-pane fade show active"
+          id="nav-descuent"
+          role="tabpanel"
+          aria-labelledby="nav-home-tab"
+          tabindex="0"
+        >
+          <h6>Producto: <strong>Gomitas Ambrosito AMBROSOLI x100g</strong></h6>
+          <div class="box-detalles-panel">
+            <div class="box-detall-prod">
+              <div class="row">
+                <div class="col-6 columna-6">
+                  <span><strong>De 3 a 5</strong></span>
+                </div>
+                <div class="col-3 columna-3">
+                  <span
+                    >Precio por unidad:
+                    <strong class="prec-space">S/ 4.56</strong></span
+                  >
+                </div>
+                <div class="col columna">
+                  <span>Ahorro:</span>
+                  <label for=""> 5%</label>
+                </div>
+              </div>
+            </div>
+            <div class="box-detall-prod">
+              <div class="row">
+                <div class="col-6 columna-6">
+                  <span><strong>De 6 a 8</strong></span>
+                </div>
+                <div class="col-3 columna-3">
+                  <span
+                    >Precio por unidad:
+                    <strong class="prec-space">S/ 4.52</strong></span
+                  >
+                </div>
+                <div class="col columna">
+                  <span>Ahorro:</span>
+                  <label for=""> 6%</label>
+                </div>
+              </div>
+            </div>
+            <div class="box-detall-prod">
+              <div class="row">
+                <div class="col-6 columna-6">
+                  <span><strong>De 9 a 11</strong></span>
+                </div>
+                <div class="col-3 columna-3">
+                  <span
+                    >Precio por unidad:
+                    <strong class="prec-space">S/ 4.49</strong></span
+                  >
+                </div>
+                <div class="col columna">
+                  <span>Ahorro:</span>
+                  <label for=""> 7%</label>
+                </div>
+              </div>
+            </div>
+            <div class="box-detall-prod">
+              <div class="row">
+                <div class="col-6 columna-6">
+                  <span><strong>De 12 a 15</strong></span>
+                </div>
+                <div class="col-3 columna-3">
+                  <span
+                    >Precio por unidad:
+                    <strong class="prec-space">S/ 4.45</strong></span
+                  >
+                </div>
+                <div class="col columna">
+                  <span>Ahorro:</span>
+                  <label for=""> 8%</label>
+                </div>
+              </div>
+            </div>
+            <div class="box-detall-prod">
+              <div class="row">
+                <div class="col-6 columna-6">
+                  <span><strong>De 16 a 20</strong></span>
+                </div>
+                <div class="col-3 columna-3">
+                  <span
+                    >Precio por unidad:
+                    <strong class="prec-space">S/ 4.39</strong></span
+                  >
+                </div>
+                <div class="col columna">
+                  <span>Ahorro:</span>
+                  <label for=""> 9%</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="nav-bonificacio"
+          role="tabpanel"
+          aria-labelledby="nav-bonificacio-tab"
+          tabindex="0"
+        >
+          <div class="box-detalles-panel2">
+            <div class="bord-contenido">
+              <span class="est-texto"
+                >Por compras entre 10 y 20, por cada 10, llevas</span
+              >
+            </div>
+            <div class="bord-contenido">
+              <span class="est-texto">Por compras entre 21 y 30, llevas</span>
+            </div>
+            <div class="bord-contenido">
+              <span class="est-texto">Por compras entre 31 y 39, llevas</span>
+            </div>
+            <div class="bord-contenido">
+              <span class="est-texto">Por compras entre 40 y 50, llevas</span>
+            </div>
+            <div class="bord-contenido">
+              <span class="est-texto"
+                >Por compras entre 51 y 200, por cada 50, llevas</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal discounts  -->
+<div
+  class="modal"
+  id="discounts"
+  tabindex="-1"
+  aria-labelledby="Descuentos"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header cabecera-modal">
+        <h6>
+          Descuentos disponibles para
+          <strong> Gomitas Ambrosito AMBROSOLI x100g</strong>
+        </h6>
+        <div class="cerrar-modal" data-bs-dismiss="modal">
+          <i class="fa fa-times icono-cerrar"></i>
+        </div>
+      </div>
+      <div class="box-detalles-panel2">
+        <div class="box-detalles-panel">
+          <div class="lista_descuentos">
+            <div class="row">
+              <div class="col-4 columna-4">
+                <span><strong>De 3 a 5</strong></span>
+              </div>
+              <div class="col-3 columna-3">
+                <span
+                  >Precio por unidad:
+                  <strong class="prec-space">S/ 4.56</strong></span
+                >
+              </div>
+              <div class="col-2 columna-2">
+                <span>Ahorro:</span>
+                <label for=""> 5%</label>
+              </div>
+              <div class="col-2">
+                <div class="btn-accss text-center">
+                  <a href="#" type="button" class="btn btn-outline-danger"
+                    >Agregar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lista_descuentos">
+            <div class="row">
+              <div class="col-4 columna-4">
+                <span><strong>De 6 a 8</strong></span>
+              </div>
+              <div class="col-3 columna-3">
+                <span
+                  >Precio por unidad:
+                  <strong class="prec-space">S/ 4.52</strong></span
+                >
+              </div>
+              <div class="col-2 columna-2">
+                <span>Ahorro:</span>
+                <label for=""> 6%</label>
+              </div>
+              <div class="col-2">
+                <div class="btn-accss text-center">
+                  <a href="#" type="button" class="btn btn-outline-danger"
+                    >Agregar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lista_descuentos">
+            <div class="row">
+              <div class="col-4 columna-4">
+                <span><strong>De 9 a 11</strong></span>
+              </div>
+              <div class="col-3 columna-3">
+                <span
+                  >Precio por unidad:
+                  <strong class="prec-space">S/ 4.49</strong></span
+                >
+              </div>
+              <div class="col-2 columna-2">
+                <span>Ahorro:</span>
+                <label for=""> 7%</label>
+              </div>
+              <div class="col-2">
+                <div class="btn-accss text-center">
+                  <a href="#" type="button" class="btn btn-outline-danger"
+                    >Agregar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lista_descuentos">
+            <div class="row">
+              <div class="col-4 columna-4">
+                <span><strong>De 12 a 15</strong></span>
+              </div>
+              <div class="col-3 columna-3">
+                <span
+                  >Precio por unidad:
+                  <strong class="prec-space">S/ 4.45</strong></span
+                >
+              </div>
+              <div class="col-2 columna-2">
+                <span>Ahorro:</span>
+                <label for=""> 8%</label>
+              </div>
+              <div class="col-2">
+                <div class="btn-accss text-center">
+                  <a href="#" type="button" class="btn btn-outline-danger"
+                    >Agregar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lista_descuentos">
+            <div class="row">
+              <div class="col-4 columna-4">
+                <span><strong>De 16 a 20</strong></span>
+              </div>
+              <div class="col-3 columna-3">
+                <span
+                  >Precio por unidad:
+                  <strong class="prec-space">S/ 4.39</strong></span
+                >
+              </div>
+              <div class="col-2 columna-2">
+                <span>Ahorro:</span>
+                <label for=""> 9%</label>
+              </div>
+              <div class="col-2">
+                <div class="btn-accss text-center">
+                  <a href="#" type="button" class="btn btn-outline-danger"
+                    >Agregar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lista_descuentos">
+            <div class="row">
+              <div class="col-4 columna-4">
+                <span><strong>De 3 a 5</strong></span>
+              </div>
+              <div class="col-3 columna-3">
+                <span
+                  >Precio por unidad:
+                  <strong class="prec-space">S/ 4.56</strong></span
+                >
+              </div>
+              <div class="col-2 columna-2">
+                <span>Ahorro:</span>
+                <label for=""> 5%</label>
+              </div>
+              <div class="col-2">
+                <div class="btn-accss text-center">
+                  <a href="#" type="button" class="btn btn-outline-danger"
+                    >Agregar</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal promotions -->
+<div
+  class="modal"
+  id="promotions"
+  tabindex="-1"
+  aria-labelledby="Bonificaciones"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header cabecera-modal">
+        <h6>
+          Bonificaciones disponibles para
+          <strong>Gomitas Ambrosito AMBROSOLI x100g</strong>
+        </h6>
+        <div class="cerrar-modal" data-bs-dismiss="modal">
+          <i class="fa fa-times icono-cerrar"></i>
+        </div>
+      </div>
+      <div class="box-detalles-panel2">
+        <div class="bord-contenido">
+          <span class="est-texto"
+            >Por compras entre 10 y 20, por cada 10, llevas</span
+          >
+        </div>
+        <div class="bord-contenido">
+          <span class="est-texto">Por compras entre 21 y 30, llevas</span>
+        </div>
+        <div class="bord-contenido">
+          <span class="est-texto">Por compras entre 31 y 39, llevas</span>
+        </div>
+        <div class="bord-contenido">
+          <span class="est-texto">Por compras entre 40 y 50, llevas</span>
+        </div>
+        <div class="bord-contenido">
+          <span class="est-texto"
+            >Por compras entre 51 y 200, por cada 50, llevas</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<!-- {{ subCategory | json }} -->
+<!-- let product of products | filterProducts : category : subCategory : []; -->
+<div class="row">
+  <div
+    class="col-4"
+    *ngFor="let product of products; trackBy: trackByProductId"
+  >
+    <md-product-card [product]="product"></md-product-card>
+  </div>
+</div>

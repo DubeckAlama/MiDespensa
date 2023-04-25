@@ -1,0 +1,144 @@
+/* contenido cobertura */
+
+section .aside-cobertura {
+  width: 100%;
+  height: 660px;
+  background-image: url('/assets/images/beach_home_background_map.jpg');
+  background-size: cover;
+  margin-top: 100px ;
+}
+section .aside-cobertura .aside-map {
+  width: 47%;
+  padding: 50px 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+section .aside-cobertura .aside-map img {
+  float:right;
+  height: 550px;
+  filter: drop-shadow(2px 2px 9px rgb(0 0 0 / 0.6));
+}
+
+section .aside-cobertura .aside-regiones{
+  width: 500px;
+  border: 1px;
+  box-shadow: 0 .3rem .50rem rgba(0,0,0,.25);
+  background-color: #dfdfdf7d;
+  border-radius: 10px;
+  padding: 25px;
+  padding-bottom: 44px;
+  font-size: 17px;
+  backdrop-filter: blur(5px);
+}
+
+section .aside-cobertura .aside-regiones h2{
+  font-weight: bold;
+  font-size: 2.38rem;
+
+}
+section .aside-cobertura .aside-regiones p{
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+section .aside-cobertura .regiones-lista{
+  width: 32%;
+  padding-left: 20px;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: 500;
+}
+
+section .aside-cobertura .regiones-lista a{
+  padding-left: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+/*modal del mapa*/
+.modal{
+  --bs-modal-width: 830px;
+  --bs-modal-margin: 13rem;
+  --bs-modal-padding: 8px 2rem 1.5rem 2rem;
+  --bs-modal-header-padding: 1.5rem 2rem 0rem;
+  --bs-modal-header-border-width: 0px;
+  --bs-modal-header-padding-x: 1.5rem;
+  --bs-modal-header-padding-y: -1rem;
+  --bs-modal-border-color:  #bdbdbd;
+  --bs-modal-border-width: 2px;
+  --bs-modal-border-radius: 1.5rem;
+}
+.modal .modal-content{
+  box-shadow: 0 0.5rem 0.5rem rgba(56, 56, 56, 0.6);
+}
+.modal .modal-header{
+  align-items: baseline;
+}
+.modal .nav{
+  --bs-nav-link-hover-color: #E2032B;
+}
+.modal h6{
+  font-size: 17px;
+}
+.modal .nav-link {
+  color: #E2032B;
+  margin: 0 9px;
+  padding: 5px 20px;
+}
+.modal .nav-pills .nav-link.active {
+  color: white;
+  background-color: #E2032B;
+}
+.modal .mb-3{
+  margin-right: 12rem;
+}
+.modal .boton-close{
+  width: 1.8em;
+  height: 1.8em;
+  border: transparent;
+  border-radius: 50px;
+  color: rgba(0, 0, 0, 0.509);
+  background-color: #cacaca;
+}
+
+.modal-backdrop {
+  --bs-backdrop-bg: white;
+}
+
+.modal .ubicar-lugar{
+  width: auto;
+  height: 416px;
+}
+.modal .ubicar-lugar .col{
+  font-size: 17px;
+}
+
+.modal .ubicar-lugar i{
+  padding: 12px 20px;
+}
+
+@media (max-height: 900px) {
+  .modal {
+    top: -110px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  section .aside-cobertura .aside-map {
+    width: 47%;
+    padding: 25px 50px;
+    display: block;
+    /*vertical-align: top;*/
+  }
+
+
+   img  {
+
+    display: none;
+
+  }
+
+
+
+}

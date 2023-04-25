@@ -1,0 +1,23 @@
+<div class="box-izquierdo">
+  <div class="cuadro-titulo">
+    <h5>Mis puntos</h5>
+  </div>
+  <div class="cuadro-lista">
+    <h6>Total acumulados</h6>
+    <span class="totalpuntos-acumulad">2,562 pts</span><br /><br />
+    <span class="parraf"
+      >Los puntos se añaden después de haber recibido el pedido</span
+    >
+    <div class="text-center">
+      <a
+        [routerLink]="(actionButton$ | async)?.path"
+        type="button"
+        class="btn btn-outline-danger"
+        >{{ (actionButton$ | async)?.title }}</a
+      >
+      <a routerLink="/mis-puntos" type="button" class="btn btn-danger"
+        >Ganar puntos</a
+      >
+    </div>
+  </div>
+</div>

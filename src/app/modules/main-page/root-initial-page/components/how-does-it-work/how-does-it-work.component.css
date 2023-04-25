@@ -1,0 +1,73 @@
+/* contenido ¿como funciona mi despensa? */
+section .aside-funciona {
+  width: 100%;
+  height: auto;
+  display:flexbox;
+  vertical-align: top;
+}
+section .aside-funciona .funcio-alineación{
+  display:flexbox;
+  vertical-align: top;
+  width: 100%;
+}
+
+section .aside-funciona .como-func-img {
+  width: 99%;
+  height: 600px;
+  padding-top: 60px;
+  text-align: end;
+  vertical-align: top;
+  display: inline-block;
+}
+section .aside-funciona .como-func-img img{
+  height: 90%;
+  margin-right: 90px;
+  display: inline-block;
+}
+section .aside-funciona .como-func-contenido{
+  width: 99%;
+  height: auto;
+  padding: 70px 80px;
+  margin-left: 12px;
+  display:inline-block;
+}
+section .aside-funciona .como-func-contenido h2{
+  font-weight: bold;
+  font-size: 2.38rem;
+  padding: 10px;
+}
+section .como-func-contenido .como-func-conten-pasos{
+  padding-top: 8px;
+  display: flexbox;
+}
+
+.aside-funciona .como-func-contenido h5{
+  font-size: 1.6rem;
+  font-weight: 600;
+  opacity: .89;
+  padding-top: 8px;
+}
+.aside-funciona .como-func-contenido .numbers{
+  padding-top: 22px;
+}
+
+section .aside-funciona .como-func-contenido p{
+  font-size: 16.5px;
+  font-weight: 500;
+  padding-right: 42px;
+}
+
+@media (max-width: 600px) {
+  section .aside-funciona .como-func-img {
+    width: 0;
+    height: 0;
+    padding-top: 0px;
+    text-align: end;
+    display: block;
+  }
+
+  img{
+    display: none ;
+  }
+
+}

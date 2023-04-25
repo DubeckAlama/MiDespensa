@@ -1,0 +1,19 @@
+.box-shopping-cart {
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 40px;
+  max-width: 1100px;
+  padding-bottom: 10vh;
+}
+.box-shopping-cart .row {
+  --bs-gutter-x: 0;
+  padding: 0;
+}
+
+.box-shopping-cart .col-7 {
+  width: 71%;
+}
+
+.box-shopping-cart .col-4 {
+  width: 25%;
+}

@@ -1,0 +1,257 @@
+body {
+  background-color: #efefef;
+}
+
+/*contenido de formulario*/
+section .content-general {
+  width: 100%;
+  margin: 100px auto;
+  max-width: 800px;
+  padding: 18px;
+}
+
+section .box-content {
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 570px;
+  padding: 70px 38px 20px 38px;
+  border: 1px solid #cacaca;
+  border-radius: 20px;
+}
+
+section .logo {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100px;
+}
+section .logo .logo-container {
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  box-shadow: 0 0.3rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+section .logo .logo-container img {
+  width: 58px;
+  position: absolute;
+  top: 56%;
+  left: 50.5%;
+  transform: translate(-50%, -50%);
+}
+
+/*menu*/
+section .content-general .step-box {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+section .content-general .step-box hr {
+  width: 100%;
+  position: absolute;
+}
+
+section .content-general .step-box div {
+  position: relative;
+  border: #e2032b 4px solid;
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-block;
+  background-color: white;
+}
+section .content-general .step-box div.active {
+  background-color: #e2032b;
+}
+
+section .content-general hr {
+  border: 2px solid #e2032b;
+  opacity: 0.75;
+}
+/*--------------------------*/
+section .content-general h4 {
+  color: #e62b4d;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 23px;
+}
+
+section .content-general .entradas {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 460px;
+}
+
+section .content-general input {
+  color: #828282;
+  background-color: #efefef;
+  margin-top: 14px;
+}
+section .content-general .form-select {
+  color: #828282;
+  background-color: #efefef;
+  margin-top: 14px;
+}
+section .ubicame {
+  width: min-content;
+  margin-left: 26px;
+}
+section .btn-accss a {
+  align-items: center;
+  border-radius: 50px;
+  padding: 6px 68px;
+  margin-top: 28px;
+  margin-bottom: 10px;
+  border-color: #e2032b;
+  --bs-btn-hover-bg: #e2032b;
+  --bs-btn-hover-border-color: #e2032b;
+  --bs-btn-active-bg: #e2032b;
+  --bs-btn-active-border-color: #e2032b;
+  --bs-btn-bg: #e2032b;
+}
+section .ubicame p {
+  color: #828282d5;
+}
+
+section .content-general .ayuda {
+  padding-top: 40px;
+}
+section .content-general .ayuda a {
+  color: #828282d5;
+  line-height: 30px;
+}
+section .content-general .botones-grup {
+  margin-top: 12px;
+}
+section .content-general button {
+  width: 226px;
+  border-radius: 50px;
+  font-size: 17px;
+  height: 48px;
+  margin: 12px;
+}
+section .content-general .botones-grup a {
+  width: 226px;
+  border-radius: 50px;
+  font-size: 17px;
+  padding: 9px;
+  margin: 12px;
+}
+section .content-general .text-center .btn-danger {
+  --bs-btn-bg: #e2032b !important;
+}
+section .content-general .text-center .btn-outline-danger {
+  font-weight: bold;
+  --bs-btn-hover-bg: #e2032b !important;
+  --bs-btn-border-width: 0.121rem;
+  --bs-btn-border-color: #e2032b !important;
+}
+
+/*boton ubicame*/
+.modal {
+  --bs-modal-width: 900px;
+  --bs-modal-margin: 9.75rem;
+  --bs-modal-padding: 2rem;
+  --bs-modal-header-padding: 1rem 2rem;
+}
+.modal-content {
+  box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);
+  border-color: #dbdbdb;
+}
+
+.modal-content .modal-header {
+  border-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.modal-content .modal-header h5 {
+  font-weight: 600;
+  padding-top: 8px;
+}
+.modal-content .modal-body {
+  padding-top: 0px;
+  padding-bottom: 6px;
+}
+.modal-content .modal-body hr {
+  width: 100%;
+  border: 1px solid;
+  margin: 1.1rem -1px !important;
+  opacity: 0.6;
+}
+.modal-content .modal-body input {
+  background-color: #efefef;
+}
+.modal-content .modal-footer {
+  border-top: none;
+  padding-top: 0px;
+  padding-bottom: 16px;
+}
+
+.modal .modal-footer a {
+  border-radius: 50px;
+  padding: 6px 26px;
+  margin-left: 14px;
+}
+
+section .box-content strong {
+  font-size: 19px;
+}
+
+.modal .modal-footer .btn-outline-danger {
+  --bs-btn-hover-bg: #e2032b !important;
+  --bs-btn-border-width: 0.121rem;
+  --bs-btn-border-color: #e2032b !important;
+}
+.modal .modal-footer .btn-danger {
+  --bs-btn-bg: #e2032b !important;
+}
+.modal-backdrop {
+  --bs-backdrop-bg: white;
+}
+
+/*boton registrar*/
+.boton-registrar .modal {
+  --bs-modal-width: 524px;
+}
+.boton-registrar .modal-content {
+  padding: 30px 34px 26px 34px;
+  margin-top: 9.1rem;
+  border-radius: 20px;
+  box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);
+  border-color: #cacaca;
+}
+.boton-registrar .modal-content img {
+  width: 74px;
+  margin: 20px 0 16px 0;
+}
+.boton-registrar .modal-content h4 {
+  color: #e62b4d;
+  font-weight: bold;
+  padding: 32px 0;
+  text-align: center;
+  font-size: 22px;
+}
+.boton-registrar .modal-content p {
+  text-align: justify;
+  padding: 0 10px 14px 10px;
+  color: #828282;
+}
+.boton-registrar .modal-content .btn-danger {
+  width: 300px;
+  border-radius: 50px;
+  font-size: 17px;
+  padding: 6px;
+  margin: 18px 0 12px 0;
+  --bs-btn-bg: #e2032b !important;
+}
+
+@media (max-height: 900px) {
+  .modal {
+    top: -110px;
+  }
+}

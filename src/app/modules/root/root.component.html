@@ -1,0 +1,32 @@
+<!--
+  ***********
+  main  header
+  ***********
+ -->
+<div class="top-header">
+  <!-- header -->
+  <!-- if it is authenticated -->
+  <md-home-header *ngIf="auth$ | async"></md-home-header>
+  <!-- if not it is authenticated -->
+  <md-header *ngIf="!(auth$ | async)"></md-header>
+  <!-- end header -->
+
+  <!-- navbar -->
+  <!-- if it is authenticated -->
+  <md-home-navbar *ngIf="auth$ | async"></md-home-navbar>
+  <!-- if not it is authenticated -->
+  <md-navbar *ngIf="!(auth$ | async)"></md-navbar>
+  <!-- end navbar -->
+</div>
+
+<!-- end main header -->
+
+<!-- TODO: root content  -->
+
+<router-outlet> </router-outlet>
+
+<!-- TODO: end root content  -->
+
+<!-- footer -->
+<md-footer></md-footer>
+<!-- end footer -->

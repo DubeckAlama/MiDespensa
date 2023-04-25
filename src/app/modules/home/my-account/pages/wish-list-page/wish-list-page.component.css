@@ -1,0 +1,10 @@
+.tab-pane .row {
+  --bs-gutter-x: 0;
+}
+
+.box-info {
+  margin: 0px 10px;
+  margin-bottom: 14vh;
+  max-width: 800px;
+  border: white solid 1.8px;
+}

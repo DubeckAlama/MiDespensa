@@ -1,0 +1,45 @@
+<!--
+  ***********
+  main  header
+  ***********
+ -->
+ <div class="top-header">
+  <!-- header -->
+  <md-home-header></md-home-header>
+  <!-- end header -->
+
+  <!-- navbar -->
+  <md-home-navbar></md-home-navbar>
+  <!-- end navbar -->
+</div>
+
+<!-- end main header -->
+
+<!-- breadcrums -->
+<md-breadcrumbs></md-breadcrumbs>
+<!-- end breadcrums -->
+
+<!-- TODO: root content  -->
+<section class="container">
+  <div class="box-categories">
+    <div class="row">
+
+      <div class="col-3">
+        <md-listing-box>
+          <h5 title>Descubre</h5>
+        </md-listing-box>
+      </div>
+
+      <div class="col-8">
+        <router-outlet> </router-outlet>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TODO: end root content  -->
+
+<!-- footer -->
+<md-footer></md-footer>
+<!-- end footer -->

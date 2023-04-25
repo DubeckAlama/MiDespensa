@@ -1,0 +1,98 @@
+<section class="container">
+  <div class="content-general">
+    <div class="logo text-center">
+      <div class="logo-container bg-primary">
+        <a routerLink=""
+          ><img src="/assets/images/logo-withe.svg" atl="Logo Mi Despensa"
+        /></a>
+      </div>
+    </div>
+
+    <div class="box-content">
+      <div class="step-box">
+        <hr />
+        <div></div>
+        <div class="active"></div>
+        <div></div>
+      </div>
+      <h4>Verifica tu método de contacto</h4>
+      <form action="">
+        <div class="entradas">
+          <p class="parraf1">
+            Asegúrate que sea tu número principal, lo usarás para iniciar sesión
+            y para recuperar tu cuenta en caso pierdas el acceso.
+          </p>
+          <input
+            type="tel"
+            class="form-control"
+            placeholder="987 654 321"
+            required="required"
+          />
+          <p class="parraf2">
+            Te enviaremos un código de verificación por mensaje de texto para
+            validar el número.
+          </p>
+        </div>
+
+        <div class="ayuda text-end">
+          <a href="#">¿Necesitas ayuda?</a>
+        </div>
+
+        <div class="text-center botones-grup">
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#continuar"
+            type="button"
+            class="btn btn-danger"
+          >
+            Continuar</button
+          ><br />
+          <strong>o</strong> <br />
+          <a
+            routerLink="/auth/login"
+            type="button"
+            class="btn btn-outline-danger"
+            >Iniciar sesión</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="continuar" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <h4>Valida tu número</h4>
+
+      <form>
+        <div class="entradas">
+          <p>
+            Para confirmar tu número , ingresa el codigo que te enviamos vía
+            mensaje de texto a 987654321
+          </p>
+          <input type="tel" class="form-control" placeholder="000 000" />
+        </div>
+
+        <div class="text-center botones-grup">
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-bs-dismiss="modal"
+            routerLink="/auth/crea-tu-cuenta"
+          >
+            Continuar</button
+          ><br />
+          <strong>o</strong> <br />
+          <a
+            routerLink="/auth/verifica-tu-telefono"
+            data-bs-dismiss="modal"
+            class="btn btn-outline-danger"
+          >
+            Cambiar número
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+/*miga de pan*/
+section ul {
+  padding: 60px 60px 60px 140px !important;
+  --bs-nav-link-padding-y: 0rem !important;
+  --bs-nav-link-padding-x: 0.6rem !important;
+  --bs-nav-link-color: black !important;
+  --bs-nav-link-hover-color:black !important;
+}
+
+/*caja de terminos y condiciones*/
+.boxterminos {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 74px;
+  max-width: 1020px;
+}
+.boxterminos h5{
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.boxterminos table{
+  --bs-table-border-color: #b6b6b6;
+
+}
+
+.boxterminos th{
+  width: 270px;
+  background-color: #EEEEEE;
+  border-width: 2px 2px !important;
+}
+.boxterminos td {
+  text-align: justify;
+  border-width: 2px 2px !important;
+}

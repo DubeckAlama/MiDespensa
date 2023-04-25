@@ -1,0 +1,76 @@
+.box-info2{
+  max-width: 500px;
+  border:#a1a1a1 solid 1px;
+  background-color: #f8f8f8;
+}
+.box-info2 .sub-titulo{
+  height: 60px;
+  background-color: #d3d3d3;
+}
+.box-info2 .sub-titulo h5{
+  padding: 17px 20px;
+  font-size: 18px;
+
+}
+.box-info2 .info-resumen{
+  padding: 20px;
+}
+.box-info2 .info-resumen .cant-productos{
+  margin-bottom: 10px;
+}
+.box-info2 .info-resumen .row .col-2{
+  width: 15%;
+}
+.box-info2 .info-resumen .descrip-prec{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.box-info2 .info-resumen .descrip-prec h6{
+  font-size: 17px;
+  margin-right: 30px;
+  margin-top: 2px;
+}
+.box-info2 .info-resumen .descrip-prec .precio4{
+  font-size: 16px;
+
+}
+.box-info2 .info-resumen .res-prod{
+  border-bottom: 2px solid black;
+  padding-bottom: -6px;
+  margin-bottom: 16px;
+}
+.box-info2 .info-resumen .res-prod h5{
+  font-size: 17px;
+}
+
+.box-info2 .info-resumen .res-bonifi{
+  border-bottom: 2px solid black;
+  padding-bottom: -6px;
+  margin-bottom: 16px;
+}
+.box-info2 .info-resumen .res-bonifi h5{
+  font-size: 17px;
+}
+.box-info2 .info-resumen .btn-accso .btn-regresar{
+  --bs-btn-hover-bg: #E2032B !important;
+  --bs-btn-border-width: 0.12rem;
+  --bs-btn-border-color: #E2032B !important;
+  border-radius: 50px;
+  width: 74%;
+  padding: 4px 0;
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+}
+.box-info2 .info-resumen .btn-accso .btn-comprar{
+  border-radius: 50px;
+  padding: 4px 26px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-color: #E2032B;
+  --bs-btn-hover-bg: #E2032B;
+  --bs-btn-hover-border-color: #E2032B;
+  --bs-btn-bg: #E2032B;
+  color: #fff;
+  width: 74%;
+}

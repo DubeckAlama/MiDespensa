@@ -1,0 +1,83 @@
+section ul {
+  padding: 60px 60px 60px 140px !important;
+  --bs-nav-link-padding-y: 0rem !important;
+  --bs-nav-link-padding-x: 0.6rem !important;
+  --bs-nav-link-color: black !important;
+  --bs-nav-link-hover-color: black !important;
+}
+
+/*sección comentarios*/
+section .box-tienesdudas {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1030px;
+  padding-bottom: 150px;
+}
+
+section h2 {
+  font-weight: bold;
+  font-size: 36px;
+  margin-left: 20px;
+  margin-bottom: 56px;
+}
+
+section .col-3 {
+  width: 27% !important;
+}
+.col-3 a {
+  font-size: 16px;
+}
+section .list-group {
+  --bs-list-group-item-padding-x: 2rem;
+  --bs-list-group-item-padding-y: 0.8rem;
+  --bs-list-group-border-width: 2px;
+}
+
+section .list-group-item {
+  border-color: transparent;
+}
+.list-group-item.active {
+  color: black;
+  background-color: #f5f5f5;
+  border-color: #c2c2c2 !important;
+}
+section .list-group-item:first-child {
+  border-radius: 0px;
+}
+section .list-group-item + .list-group-item {
+  border-radius: 0px;
+}
+
+section .col-8 {
+  width: 68.5% !important;
+}
+.col-8 h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.col-8 h6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.col-8 p {
+  text-align: justify;
+  font-size: 15px;
+}
+.col-8 .title1 p {
+  padding-bottom: 20px;
+}
+.col-8 .title2 {
+  padding-left: 30px;
+}
+
+.box-info {
+  margin: 0px 10px;
+  max-width: 800px;
+  border: #e9ecef solid 2px;
+  padding: 10px 26px 100px 26px;
+}
+
+
+

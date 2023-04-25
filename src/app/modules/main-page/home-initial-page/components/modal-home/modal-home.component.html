@@ -1,0 +1,86 @@
+<!-- modal component -->
+<div
+  class="modal fade"
+  id="modal-opciones"
+  tabindex="-1"
+  *ngIf="isModalShown"
+  [config]="{ show: true, keyboard: false }"
+  bsModal
+  #autoShownModal="bs-modal"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <img class="logo-modal" src="/assets/images/midespensa-logo.svg" alt="" />
+      <h6 class="text-primary">Elige tus productos</h6>
+      <p>Hola Renatto ¿qué vas a comprar hoy?</p>
+      <div class="box-marca">
+        <div class="row">
+          <div class="col-3" *ngFor="let brand of brands; index as i">
+            <div
+              class="box-marca-item"
+              [ngClass]="{ active: brand.selected }"
+              (click)="getBrand(i)"
+              [attr.aria-expanded]="!isCollapsed"
+              aria-controls="collapseBasic"
+            >
+              <div class="box-marca-img">
+                <img [src]="brand.imgUrl" alt="" />
+              </div>
+              <p>{{ brand.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-content-display">
+        <div
+          id="collapseBasic"
+          [collapse]="!isCollapsed"
+          [isAnimated]="true"
+          class="item-content"
+        >
+          <form action="">
+            <label for="">Selecciona tu dirección para recibir el pedido</label
+            ><br />
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Las Rosas #567
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Opción2</a></li>
+                <li><a class="dropdown-item" href="#">Opción3</a></li>
+                <li><a class="dropdown-item" href="#">Opción4</a></li>
+              </ul>
+            </div>
+            <label for="">Fecha de entrega</label>
+            <input
+              type="date"
+              id="start"
+              name="trip-start"
+              value="2022/08/08"
+              min="2022-01-01"
+              max="2023-12-31"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="btn-accss text-center">
+        <a
+          href="#"
+          type="button"
+          [ngClass]="startPucharse == true ? 'disabled' : ''"
+          class="lastboton btn btn-danger"
+          data-bs-dismiss="modal"
+          (click)="dissmisModal()"
+          >Iniciar compras</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end modal -->

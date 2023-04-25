@@ -1,0 +1,109 @@
+.box-info{
+  margin-right: 30px;
+  max-width: 800px;
+  border: #b1b1b1 solid 1px;
+  background-color: #f8f8f8;
+}
+
+.box-info .nav-tabs{
+  --bs-nav-tabs-link-active-bg: #f8f8f8 ;
+  --bs-nav-tabs-link-active-border-color: #dee2e6 #dee2e6 #f8f8f8;
+  --bs-nav-tabs-border-width: 0;
+  background-color: #d3d3d3;
+  height: 60px;
+}
+.box-info .nav-tabs button{
+  border-radius: 0px;
+  font-weight: 600;
+  font-weight: 17px;
+  padding: 18px 28px;
+  color: black;
+}
+.box-info .borde-cuadro{
+  border: 1px solid #CECECE;
+  padding: 12px 18px 6px 18px;
+  margin: 14px;
+  border-radius: 10px;
+}
+
+.box-info .borde-cuadro .row .colum-d {
+  width: 24%;
+}
+.box-info .borde-cuadro .row .colum-d img{
+  opacity: 0.20;
+  width: 46%;
+  margin-left: 10px;
+}
+.box-info .borde-cuadro .row .colum-e{
+  width: 37%;
+}
+.box-info .borde-cuadro .row .colum-e h5{
+  font-size: 17px;
+}
+.box-info .borde-cuadro .row .colum-e h6{
+  font-size: 16px;
+}
+.box-info .borde-cuadro .row .colum-e .botns-lab-seltc{
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.box-info .borde-cuadro .row .colum-e .botns-lab-seltc label{
+  width: 36px;
+  background-color: #e1e1e2;
+  font-size: 15px;
+  text-align: center;
+}
+.box-info .borde-cuadro .row .colum-e .botns-lab-seltc .boton-menos{
+  width: 22px;
+  background-color: #e1e1e2;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 6px 0 8px;
+  border-radius: 50px 0 0 50px;
+  margin-left: 10px;
+}
+.box-info .borde-cuadro .row .colum-e .botns-lab-seltc .boton-mas{
+  width: 22px;
+  background-color: #e1e1e2;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 0 8px 0 6px;
+  border-radius: 0 50px 50px 0;
+}
+.box-info .borde-cuadro .row .colum-f{
+  width: 25%;
+}
+.box-info .borde-cuadro .row .colum-g{
+  width: 12%;
+}
+
+/*lado izquierdo, tabla 2*/
+.box-info .tabla-bonifica{
+  padding: 20px;
+}
+.box-info .tabla-bonifica .detall-boni{
+  border: #b1b1b1 solid 1px;
+  border-radius: 10px;
+  padding: 10px 16px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.box-info .tabla-bonifica .detall-boni:hover{
+  background-color: white;
+}
+.box-info .tabla-bonifica .detall-boni .row .col-10{
+  width: 91%;
+}
+.box-info .tabla-bonifica .detall-boni-final{
+  margin-bottom: 50px;
+}
+
+.box-info .tabla-bonifica .detall-boni .fa-angle-up{
+  display: none;
+}
+.box-info .tabla-bonifica .detall-boni:hover .fa-angle-down{
+  display: none;
+}
+.box-info .tabla-bonifica .detall-boni:hover .fa-angle-up{
+  display: inline-block;
+}

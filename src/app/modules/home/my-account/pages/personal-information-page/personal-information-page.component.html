@@ -1,0 +1,119 @@
+
+  <!-- form personal data -->
+  <div class="box-info border-primary tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane fade show active title1"
+    >
+      <div class="row">
+        <div class="col-6">
+          <div class="row datosinforow">
+            <div class="col-4">
+              <div class="circleid">
+                <h3>JC</h3>
+              </div>
+            </div>
+            <div class="col-7">
+              <p class="nombres">Jorge Renatto</p>
+              <p class="apellidos">Celis Urquiaga</p>
+            </div>
+            <div class="col-1">
+              <i class="fa-regular fa-pen-to-square i-style"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="btn-accss text-center">
+            <button
+              class="lastboton btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#cambiar-contraseña"
+              type="submit"
+            >
+              Cambiar contraseña
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-6">
+          <label for="">Correo:</label><br />
+          <input
+            type="email"
+            placeholder="renatto.celis@gmail.com"
+            class="disabled"
+          />
+          <i class="fa-regular fa-pen-to-square"></i><br />
+          <label for="">Documento:</label><br />
+          <input type="text" placeholder="75842536" />
+          <i class="fa-regular fa-pen-to-square"></i><br />
+          <label for="">Fecha de nacimiento:</label><br />
+          <input type="text" placeholder="08/08/1998" />
+          <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+        <div class="col-5">
+          <label for="">Celular:</label><br />
+          <input type="text" placeholder="988 562 176" />
+          <i class="fa-regular fa-pen-to-square"></i><br />
+          <label for="">Sexo:</label><br />
+          <input type="text" placeholder="Masculino" />
+          <i class="fa-regular fa-pen-to-square"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- modal -->
+  <div class="modal" tabindex="-1" id="cambiar-contraseña">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="content-general">
+          <div class="text-center">
+            <a href="#"
+              ><img src="/assets/images/midespensa-logo.svg" alt=""
+            /></a>
+          </div>
+
+          <div class="box-content">
+            <h4>Cambia tu contraseña</h4>
+            <form action="">
+              <div class="entradas">
+                <input
+                  type="tel"
+                  class="form-control"
+                  placeholder="Contraseña actual"
+                  required="required"
+                />
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Nueva contraseña"
+                  required="required"
+                />
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Confirmar tu nueva contraseña"
+                  required="required"
+                />
+              </div>
+
+              <div class="text-center botones-grup">
+                <a
+                  href="#"
+                  type="button"
+                  class="btn btn-outline-danger"
+                  data-bs-dismiss="modal"
+                  >Cancelar</a
+                >
+                <br />
+                <a href="#" type="button" class="btn btn-danger">Restablecer</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

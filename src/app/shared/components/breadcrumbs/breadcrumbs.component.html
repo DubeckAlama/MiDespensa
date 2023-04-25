@@ -1,0 +1,21 @@
+<section class="container">
+  <ul class="nav {{ type }}">
+    <li class="nav-item">
+      <a class="nav-link" ariaCurrentWhenActive="page" routerLink="">Inicio</a>
+    </li>
+
+    <!-- add links dynamically -->
+    <ng-container *ngFor="let links of breadcrumbsLinks">
+      /
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          ariaCurrentWhenActive="page"
+          routerLink="{{ links.path }}"
+          routerLinkActive="{{ links.active }}"
+          >{{ links.name }}</a
+        >
+      </li>
+    </ng-container>
+  </ul>
+</section>

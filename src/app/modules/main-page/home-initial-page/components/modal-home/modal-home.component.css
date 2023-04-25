@@ -1,0 +1,130 @@
+
+/*------ modal------ */
+.modal {
+  --bs-modal-width: 586px;
+  --bs-modal-border-radius: 20px;
+}
+.modal.show{
+   /* backdrop-filter: blur(5px); */
+   background-color: #ffffff38;
+   backdrop-filter: blur(5px);
+}
+
+/* logo*/
+.modal .modal-content .logo-modal{
+   width: 80px;
+   align-self: center;
+   margin-top: 30px;
+}
+.modal .modal-content h6{
+   align-self: center;
+   font-size: 18px;
+   font-weight: bold;
+   margin-top: 10px;
+}
+.modal .modal-content p{
+   align-self: center;
+}
+
+.modal .modal-content .nav{
+   --bs-nav-link-padding-x: 10px;
+}
+.modal .modal-content .nav-link{
+   padding: 0px;
+}
+
+.modal .modal-content .box-marca,
+.modal .modal-content .box-content-display{
+   padding: 0 28px;
+   margin-bottom: 20px;
+}
+
+.modal .modal-content .box-marca .row .col-3{
+   padding: 0 4px;
+}
+
+.modal .modal-content .box-marca .box-marca-item{
+   border: 1px #ccc solid;
+   border-radius: 6px;
+   box-shadow: 0px 3px 7px #ccc;
+   cursor: pointer;
+   overflow: hidden;
+   padding: 2px;
+}
+
+.modal .modal-content .box-marca .box-marca-item .box-marca-img{
+   height: 132px;
+   background-color: rgb(236, 236, 236);
+   box-shadow: inset 0px 0px 3px #ccc;
+   border-radius: 4px 4px  0 0;
+}
+
+.modal .modal-content .box-marca .box-marca-item:hover .box-marca-img,
+.modal .modal-content .box-marca .box-marca-item.active .box-marca-img{
+   background-color: #ff8299;
+}
+
+.modal .modal-content .box-marca img{
+   width: 120px;
+   background-color: transparent;
+   padding: 20px 14px;
+
+}
+.modal .modal-content .box-marca p{
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.modal .modal-content .box-content-display .item-content{
+   display: none;
+}
+
+.modal .modal-content .box-content-display .item-content.active{
+   display: block;
+}
+.modal .modal-content form{
+   width: 100%;
+   margin: 20px auto;
+   max-width: 390px;
+
+
+}
+.modal .modal-content .dropdown{
+   margin: 20px 0;
+}
+.modal .modal-content .dropdown button{
+   width: 380px;
+   --bs-btn-bg: #F4F4F4;
+   color: black;
+   text-align: justify;
+   --bs-btn-hover-bg: #F4F4F4;
+   border: #dee2e6 solid 1px;
+}
+.modal-content .dropdown button:hover{
+   background-color: #F4F4F4;
+   border: #c8cdd2 solid 1px;
+}
+.modal .modal-content .btn-accss a{
+   margin: 0 0 30px 0;
+   width: 250px;
+   border-radius: 30px;
+   border-color: #E2032B;
+   --bs-btn-hover-bg: #E2032B;
+   --bs-btn-hover-border-color: #E2032B;
+   --bs-btn-active-bg: #E2032B;
+   --bs-btn-active-border-color: #E2032B;
+   --bs-btn-hover-color: #fff;
+   --bs-btn-color: #fff;
+   --bs-btn-bg: #E2032B;
+}
+
+.modal .modal-content .dropdown .dropdown-toggle::after{
+   margin-left: 14.255em;
+}
+.modal .modal-content input{
+   margin-left: 120px;
+   background-color: #F4F4F4;
+   padding: 2px 8px;
+   border: #c8cdd2 solid 1px;
+   border-radius: 5px;
+}

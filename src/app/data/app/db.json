@@ -1,0 +1,1516 @@
+{
+  "users": [
+    {
+      "phone": "987456123",
+      "password": "12345678",
+      "names": "Rolando",
+      "last_names": "Ordoñez Cango",
+      "document_type_id": "1",
+      "document": "48561237",
+      "sex": "Varón",
+      "birth_date": "12/09/1995",
+      "verified": 1,
+      "id": 1
+    },
+    {
+      "phone": "977764642",
+      "password": "12345678",
+      "names": "jose",
+      "last_names": "mundaca",
+      "document_type_id": "1",
+      "document": "75194545",
+      "sex": "Varón",
+      "birth_date": "26/04/1996",
+      "verified": true,
+      "id": 2
+    }
+  ],
+  "addresses": [
+    {
+      "userId": 1,
+      "departament": "Lima",
+      "province": "Chiclayo",
+      "district": "San Isidro",
+      "address": "Av. Peru#124",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "departament": "Lima",
+      "province": "Lima",
+      "district": "Santa Anita",
+      "address": "Santa anita #168 - urbanizacion de monterrico",
+      "id": 2
+    }
+  ],
+  "knows": [
+    {
+      "userId": 1,
+      "answer": "Internet",
+      "id": 1
+    },
+    {
+      "userId": 2,
+      "answer": "Internet",
+      "id": 2
+    }
+  ],
+  "document_types": [
+    {
+      "id": 1,
+      "name": "DNI"
+    },
+    {
+      "id": 2,
+      "name": "Pasaporte"
+    },
+    {
+      "id": 3,
+      "name": "Carnet de extranjería"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "slug": "abarrotes",
+      "name": "Abarrotes",
+      "subcategories": [
+        {
+          "name": "desayuno",
+          "tags": [
+            {
+              "name": "Té"
+            },
+            {
+              "name": "Avena"
+            },
+            {
+              "name": "Mermelada"
+            },
+            {
+              "name": "Cereal"
+            },
+            {
+              "name": "Café"
+            }
+          ]
+        },
+        {
+          "name": "cocina",
+          "tags": [
+            {
+              "name": "Maicena"
+            },
+            {
+              "name": "Fideos"
+            },
+            {
+              "name": "Cremas"
+            }
+          ]
+        },
+        {
+          "name": "conservas",
+          "tags": [
+            {
+              "name": "Durazno"
+            },
+            {
+              "name": "Pescado"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "slug": "confiteria",
+      "name": "Confitería",
+      "subcategories": [
+        {
+          "name": "galletas y wafer",
+          "tags": [
+            {
+              "name": "Galletas"
+            },
+            {
+              "name": "Wafer"
+            }
+          ]
+        },
+        {
+          "name": "chocolates",
+          "tags": [
+            {
+              "name": "Bizcochos"
+            },
+            {
+              "name": "Chocolates"
+            }
+          ]
+        },
+        {
+          "name": "toffes y frunas",
+          "tags": [
+            {
+              "name": "Bizcochos"
+            },
+            {
+              "name": "Chocolates"
+            },
+            {
+              "name": "Tuffes"
+            }
+          ]
+        },
+        {
+          "name": "chupetes",
+          "tags": [
+            {
+              "name": "Chupetines"
+            },
+            {
+              "name": "Paletas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "slug": "cuidado-del-hogar",
+      "name": "Cuidado del hogar",
+      "subcategories": [
+        {
+          "name": "detergentes",
+          "tags": [
+            {
+              "name": "Detergente líquido"
+            },
+            {
+              "name": "Detergente en polvo"
+            },
+            {
+              "name": "Suavizantes"
+            }
+          ]
+        },
+        {
+          "name": "jabón de lavar",
+          "tags": [
+            {
+              "name": "Jabón de barra"
+            },
+            {
+              "name": "Jabón líquido"
+            }
+          ]
+        },
+        {
+          "name": "limpieza de cocina",
+          "tags": [
+            {
+              "name": "Lavavajillas"
+            },
+            {
+              "name": "Servilletas"
+            }
+          ]
+        },
+        {
+          "name": "desinfectantes",
+          "tags": [
+            {
+              "name": "Lejía"
+            },
+            {
+              "name": "Cloro"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "slug": "cuidado-personal",
+      "name": "Cuidado personal",
+      "subcategories": [
+        {
+          "name": "papel",
+          "tags": [
+            {
+              "name": "Pepel higiénico"
+            },
+            {
+              "name": "Papel toalla"
+            }
+          ]
+        },
+        {
+          "name": "jabón de tocador",
+          "tags": [
+            {
+              "name": "Jabón en barra"
+            },
+            {
+              "name": "Jabón liquido"
+            }
+          ]
+        },
+        {
+          "name": "cuidado del cabello",
+          "tags": [
+            {
+              "name": "Acondicionador"
+            },
+            {
+              "name": "Cepillos"
+            },
+            {
+              "name": "Shammpoo"
+            },
+            {
+              "name": "Gel"
+            }
+          ]
+        },
+        {
+          "name": "cuidado oral",
+          "tags": [
+            {
+              "name": "Pasta dental"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "slug": "cuidado-del-bebe",
+      "name": "Cuidado del bebé",
+      "subcategories": [
+        {
+          "name": "pañales",
+          "tags": [
+            {
+              "name": "Pañales"
+            }
+          ]
+        },
+        {
+          "name": "pañitos húmedos",
+          "tags": [
+            {
+              "name": "Toallitas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "slug": "licores",
+      "name": "Licores",
+      "subcategories": [
+        {
+          "name": "vino",
+          "tags": []
+        },
+        {
+          "name": "espumante",
+          "tags": []
+        },
+        {
+          "name": "ron",
+          "tags": []
+        },
+        {
+          "name": "pisco",
+          "tags": []
+        },
+        {
+          "name": "whisky",
+          "tags": []
+        },
+        {
+          "name": "vodka",
+          "tags": []
+        },
+        {
+          "name": "gin",
+          "tags": []
+        },
+        {
+          "name": "tequila",
+          "tags": []
+        },
+        {
+          "name": "licores preparados",
+          "tags": [
+            {
+              "name": "Cóctel"
+            },
+            {
+              "name": "Chilcano"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "slug": "mascotas",
+      "name": "Mascotas",
+      "subcategories": [
+        {
+          "name": "limpiadores",
+          "tags": [
+            {
+              "name": "Arena para gatos"
+            },
+            {
+              "name": "Recogedores"
+            }
+          ]
+        },
+        {
+          "name": "alimentos",
+          "tags": [
+            {
+              "name": "Croquetas"
+            },
+            {
+              "name": "Enlatados"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Procyon lotor",
+      "trademark": "Alacena.",
+      "measure": "80 g",
+      "price": 2.8,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Limpiadores",
+      "tags": []
+    },
+    {
+      "id": 2,
+      "name": "Sylvilagus floridanus",
+      "trademark": "La Preferida",
+      "measure": "50 ud",
+      "price": 7.8,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Pañitos Húmedos",
+      "tags": []
+    },
+    {
+      "id": 3,
+      "name": "Nesomimus trifasciatus",
+      "trademark": "Cuisine & Co",
+      "measure": "60 g",
+      "price": 7.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Vino",
+      "tags": []
+    },
+    {
+      "id": 4,
+      "name": "Fregata magnificans",
+      "trademark": "San Fernando",
+      "measure": "100 ud",
+      "price": 18.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Desayuno",
+      "tags": []
+    },
+    {
+      "id": 5,
+      "name": "Macaca nemestrina",
+      "trademark": "La Preferida",
+      "measure": "2l",
+      "price": 8.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Espumante",
+      "tags": []
+    },
+    {
+      "id": 6,
+      "name": "Chlamydosaurus kingii",
+      "trademark": "SAYÓN",
+      "measure": "25 kg",
+      "price": 7.7,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Jabón De Lavar",
+      "tags": []
+    },
+    {
+      "id": 7,
+      "name": "Ramphastos tucanus",
+      "trademark": "Cuisine & Co",
+      "measure": "5 kg",
+      "price": 11.7,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Pañales",
+      "tags": []
+    },
+    {
+      "id": 8,
+      "name": "Propithecus verreauxi",
+      "trademark": "Bonlé",
+      "measure": "10 ud",
+      "price": 3.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Cocina",
+      "tags": []
+    },
+    {
+      "id": 9,
+      "name": "Colaptes campestroides",
+      "trademark": "Anita",
+      "measure": "60 g",
+      "price": 7.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "desayuno",
+      "tags": [
+        "Té",
+        "Avena"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Gyps bengalensis",
+      "trademark": "Doña Gusta",
+      "measure": "100 g",
+      "price": 14.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Cocina",
+      "tags": []
+    },
+    {
+      "id": 11,
+      "name": "Coendou prehensilis",
+      "trademark": "KESHUA",
+      "measure": "20 ud",
+      "price": 9.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Jabón de Tocador",
+      "tags": []
+    },
+    {
+      "id": 12,
+      "name": "Felis silvestris lybica",
+      "trademark": "Don Vittorio",
+      "measure": "40 ud",
+      "price": 3.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Pisco",
+      "tags": []
+    },
+    {
+      "id": 13,
+      "name": "Milvago chimachima",
+      "trademark": "Danlac",
+      "measure": "5 kg",
+      "price": 5,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "desayuno",
+      "tags": [
+        "Cereal",
+        "Avena"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Bubo virginianus",
+      "trademark": "Ángel",
+      "measure": "60 g",
+      "price": 5.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Whisky",
+      "tags": []
+    },
+    {
+      "id": 15,
+      "name": "Kobus leche robertsi",
+      "trademark": "Bonlé",
+      "measure": "100 g",
+      "price": 17,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Desinfectantes",
+      "tags": []
+    },
+    {
+      "id": 16,
+      "name": "Casmerodius albus",
+      "trademark": "Danlac",
+      "measure": "50 kg",
+      "price": 13.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Tequila",
+      "tags": []
+    },
+    {
+      "id": 17,
+      "name": "Otaria flavescens",
+      "trademark": "Plusa",
+      "measure": "5 l",
+      "price": 14.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Desinfectantes",
+      "tags": []
+    },
+    {
+      "id": 18,
+      "name": "Mazama gouazoubira",
+      "trademark": "WINTER'S",
+      "measure": "25 kg",
+      "price": 17.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Gin",
+      "tags": []
+    },
+    {
+      "id": 19,
+      "name": "Damaliscus lunatus",
+      "trademark": "Alacena.",
+      "measure": "80 g",
+      "price": 5.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Detergentes",
+      "tags": []
+    },
+    {
+      "id": 20,
+      "name": "Manouria emys",
+      "trademark": "Ajinomoto",
+      "measure": "25 kg",
+      "price": 7.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Cuidado del Cabello",
+      "tags": []
+    },
+    {
+      "id": 21,
+      "name": "Genetta genetta",
+      "trademark": "NESTLE",
+      "measure": "40 ud",
+      "price": 1,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Jabón De Lavar",
+      "tags": []
+    },
+    {
+      "id": 22,
+      "name": "Lemur fulvus",
+      "trademark": "KESHUA",
+      "measure": "25 kg",
+      "price": 12.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Papel",
+      "tags": []
+    },
+    {
+      "id": 23,
+      "name": "Aquila chrysaetos",
+      "trademark": "Plusa",
+      "measure": "2l",
+      "price": 15.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Cuidado del Cabello",
+      "tags": []
+    },
+    {
+      "id": 24,
+      "name": "Milvago chimachima",
+      "trademark": "NESTLE",
+      "measure": "5 l",
+      "price": 10.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Licores Preparados",
+      "tags": []
+    },
+    {
+      "id": 25,
+      "name": "Cordylus giganteus",
+      "trademark": "San Jorge",
+      "measure": "1 l",
+      "price": 8.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "cocina",
+      "tags": [
+        "Fideos"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Callipepla gambelii",
+      "trademark": "Cuisine & Co",
+      "measure": "20 ud",
+      "price": 14.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Whisky",
+      "tags": []
+    },
+    {
+      "id": 27,
+      "name": "Ardea golieth",
+      "trademark": "Danlac",
+      "measure": "5 l",
+      "price": 15.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Jabón de Tocador",
+      "tags": []
+    },
+    {
+      "id": 28,
+      "name": "Cracticus nigroagularis",
+      "trademark": "FIELD",
+      "measure": "50 ud",
+      "price": 4.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "cocina",
+      "tags": [
+        "Maicena"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Larus dominicanus",
+      "trademark": "Don Vittorio",
+      "measure": "100 g",
+      "price": 6.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Whisky",
+      "tags": []
+    },
+    {
+      "id": 30,
+      "name": "Megaderma spasma",
+      "trademark": "Doña Gusta",
+      "measure": "25 kg",
+      "price": 15.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Limpieza De Cocina",
+      "tags": []
+    },
+    {
+      "id": 31,
+      "name": "Dusicyon thous",
+      "trademark": "Ajinomoto",
+      "measure": "10 ud",
+      "price": 15.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Pisco",
+      "tags": []
+    },
+    {
+      "id": 32,
+      "name": "Phalacrocorax varius",
+      "trademark": "Sibarita",
+      "measure": "2l",
+      "price": 3.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Ron",
+      "tags": []
+    },
+    {
+      "id": 33,
+      "name": "Pelecanus conspicillatus",
+      "trademark": "Monteagle",
+      "measure": "100 g",
+      "price": 15.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Cuidado del Cabello",
+      "tags": []
+    },
+    {
+      "id": 34,
+      "name": "unavailable",
+      "trademark": "Ángel",
+      "measure": "5 l",
+      "price": 9.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Espumante",
+      "tags": []
+    },
+    {
+      "id": 35,
+      "name": "Hippotragus equinus",
+      "trademark": "San Fernando",
+      "measure": "25 kg",
+      "price": 14.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Desinfectantes",
+      "tags": []
+    },
+    {
+      "id": 36,
+      "name": "Geococcyx californianus",
+      "trademark": "Don Vittorio",
+      "measure": "50 ud",
+      "price": 6.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Jabón de Tocador",
+      "tags": []
+    },
+    {
+      "id": 37,
+      "name": "Felis serval",
+      "trademark": "Anita",
+      "measure": "80 g",
+      "price": 1.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Jabón De Lavar",
+      "tags": []
+    },
+    {
+      "id": 38,
+      "name": "Actophilornis africanus",
+      "trademark": "D'ONOFRIO",
+      "measure": "5 l",
+      "price": 7.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Conservas",
+      "tags": []
+    },
+    {
+      "id": 39,
+      "name": "Bassariscus astutus",
+      "trademark": "Alacena.",
+      "measure": "60 g",
+      "price": 13,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Conservas",
+      "tags": []
+    },
+    {
+      "id": 40,
+      "name": "Butorides striatus",
+      "trademark": "NESTLE",
+      "measure": "5 l",
+      "price": 1.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Desayuno",
+      "tags": []
+    },
+    {
+      "id": 41,
+      "name": "Taurotagus oryx",
+      "trademark": "Anita",
+      "measure": "100 g",
+      "price": 1.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Desayuno",
+      "tags": []
+    },
+    {
+      "id": 42,
+      "name": "Stercorarius longicausus",
+      "trademark": "NESTLE",
+      "measure": "100 g",
+      "price": 11,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Ron",
+      "tags": []
+    },
+    {
+      "id": 43,
+      "name": "Ara ararauna",
+      "trademark": "Danlac",
+      "measure": "3 l",
+      "price": 14,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "conservas",
+      "tags": [
+        "Durazno"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Microcebus murinus",
+      "trademark": "La Preferida",
+      "measure": "5 l",
+      "price": 9.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Chocolates Toffes y Frunas",
+      "tags": []
+    },
+    {
+      "id": 45,
+      "name": "Cynomys ludovicianus",
+      "trademark": "Danlac",
+      "measure": "100 g",
+      "price": 1.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Galletas y Wafer",
+      "tags": []
+    },
+    {
+      "id": 46,
+      "name": "Vulpes vulpes",
+      "trademark": "Cuisine & Co",
+      "measure": "10 ud",
+      "price": 13.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Desayuno",
+      "tags": []
+    },
+    {
+      "id": 47,
+      "name": "Macaca nemestrina",
+      "trademark": "Sibarita",
+      "measure": "80 g",
+      "price": 15.7,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "cocina",
+      "tags": [
+        "Fideo"
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Vulpes cinereoargenteus",
+      "trademark": "FIELD",
+      "measure": "10 ud",
+      "price": 8.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Detergentes",
+      "tags": []
+    },
+    {
+      "id": 49,
+      "name": "Coluber constrictor",
+      "trademark": "Doña Gusta",
+      "measure": "2l",
+      "price": 12.7,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Conservas",
+      "tags": []
+    },
+    {
+      "id": 50,
+      "name": "Macaca mulatta",
+      "trademark": "San Fernando",
+      "measure": "5 kg",
+      "price": 2.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Pañitos Húmedos",
+      "tags": []
+    },
+    {
+      "id": 51,
+      "name": "Acrobates pygmaeus",
+      "trademark": "San Fernando",
+      "measure": "40 g",
+      "price": 9.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Pañitos Húmedos",
+      "tags": []
+    },
+    {
+      "id": 52,
+      "name": "Cordylus giganteus",
+      "trademark": "WINTER'S",
+      "measure": "80 g",
+      "price": 3.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Gin",
+      "tags": []
+    },
+    {
+      "id": 53,
+      "name": "Mazama gouazoubira",
+      "trademark": "KESHUA",
+      "measure": "1 l",
+      "price": 13.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Chupetes",
+      "tags": []
+    },
+    {
+      "id": 54,
+      "name": "Trachyphonus vaillantii",
+      "trademark": "San Fernando",
+      "measure": "20 ud",
+      "price": 8.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Cuidado del Cabello",
+      "tags": []
+    },
+    {
+      "id": 55,
+      "name": "Picoides pubescens",
+      "trademark": "Monteagle",
+      "measure": "10 ud",
+      "price": 4.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Limpieza De Cocina",
+      "tags": []
+    },
+    {
+      "id": 56,
+      "name": "Mirounga leonina",
+      "trademark": "Alacena.",
+      "measure": "50 kg",
+      "price": 17.8,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Detergentes",
+      "tags": []
+    },
+    {
+      "id": 57,
+      "name": "Cervus canadensis",
+      "trademark": "KESHUA",
+      "measure": "25 kg",
+      "price": 11.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Chocolates Toffes y Frunas",
+      "tags": []
+    },
+    {
+      "id": 58,
+      "name": "Macaca nemestrina",
+      "trademark": "Ajinomoto",
+      "measure": "80 g",
+      "price": 7.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Whisky",
+      "tags": []
+    },
+    {
+      "id": 59,
+      "name": "Ictonyx striatus",
+      "trademark": "NESTLE",
+      "measure": "50 ud",
+      "price": 2.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Desayuno",
+      "tags": []
+    },
+    {
+      "id": 60,
+      "name": "Pelecans onocratalus",
+      "trademark": "Cuisine & Co",
+      "measure": "10 kg",
+      "price": 5,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Detergentes",
+      "tags": []
+    },
+    {
+      "id": 61,
+      "name": "Vulpes vulpes",
+      "trademark": "San Jorge",
+      "measure": "40 ud",
+      "price": 6.8,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Pañales",
+      "tags": []
+    },
+    {
+      "id": 62,
+      "name": "Chauna torquata",
+      "trademark": "Danlac",
+      "measure": "40 ud",
+      "price": 2.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Chupetes",
+      "tags": []
+    },
+    {
+      "id": 63,
+      "name": "Ictonyx striatus",
+      "trademark": "Don Vittorio",
+      "measure": "40 ud",
+      "price": 10.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "cocina",
+      "tags": [
+        "Cremas"
+      ]
+    },
+    {
+      "id": 64,
+      "name": "unavailable",
+      "trademark": "D'ONOFRIO",
+      "measure": "10 kg",
+      "price": 2.7,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Chocolates Toffes y Frunas",
+      "tags": []
+    },
+    {
+      "id": 65,
+      "name": "Ovis canadensis",
+      "trademark": "SAYÓN",
+      "measure": "10 ud",
+      "price": 7.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Ron",
+      "tags": []
+    },
+    {
+      "id": 66,
+      "name": "Dusicyon thous",
+      "trademark": "Don Vittorio",
+      "measure": "50 ud",
+      "price": 6.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Vino",
+      "tags": []
+    },
+    {
+      "id": 67,
+      "name": "Corvus brachyrhynchos",
+      "trademark": "Don Vittorio",
+      "measure": "100 ud",
+      "price": 13.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Vino",
+      "tags": []
+    },
+    {
+      "id": 68,
+      "name": "Ara macao",
+      "trademark": "Bonlé",
+      "measure": "5 kg",
+      "price": 3.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Pañales",
+      "tags": []
+    },
+    {
+      "id": 69,
+      "name": "Isoodon obesulus",
+      "trademark": "SAYÓN",
+      "measure": "100 g",
+      "price": 15.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Chupetes",
+      "tags": []
+    },
+    {
+      "id": 70,
+      "name": "Canis aureus",
+      "trademark": "Sibarita",
+      "measure": "40 g",
+      "price": 10.8,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Ron",
+      "tags": []
+    },
+    {
+      "id": 71,
+      "name": "Dasyurus viverrinus",
+      "trademark": "Danlac",
+      "measure": "50 kg",
+      "price": 13.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "conservas",
+      "tags": [
+        "Pescado"
+      ]
+    },
+    {
+      "id": 72,
+      "name": "Haematopus ater",
+      "trademark": "Doña Gusta",
+      "measure": "3 l",
+      "price": 9.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Espumante",
+      "tags": []
+    },
+    {
+      "id": 73,
+      "name": "Sarcorhamphus papa",
+      "trademark": "KESHUA",
+      "measure": "10 ud",
+      "price": 6.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Tequila",
+      "tags": []
+    },
+    {
+      "id": 74,
+      "name": "Spermophilus armatus",
+      "trademark": "Gloria",
+      "measure": "60 g",
+      "price": 19.8,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Jabón de Tocador",
+      "tags": []
+    },
+    {
+      "id": 75,
+      "name": "Spizaetus coronatus",
+      "trademark": "San Jorge",
+      "measure": "2l",
+      "price": 1.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Papel",
+      "tags": []
+    },
+    {
+      "id": 76,
+      "name": "Cracticus nigroagularis",
+      "trademark": "Bonlé",
+      "measure": "40 ud",
+      "price": 12.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Cuidado Oral",
+      "tags": []
+    },
+    {
+      "id": 77,
+      "name": "Sarcophilus harrisii",
+      "trademark": "KESHUA",
+      "measure": "3 l",
+      "price": 15.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Vino",
+      "tags": []
+    },
+    {
+      "id": 78,
+      "name": "Cervus canadensis",
+      "trademark": "Sibarita",
+      "measure": "60 g",
+      "price": 17.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Desayuno",
+      "tags": []
+    },
+    {
+      "id": 79,
+      "name": "Ovis musimon",
+      "trademark": "Doña Gusta",
+      "measure": "2l",
+      "price": 3.7,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Cuidado del Cabello",
+      "tags": []
+    },
+    {
+      "id": 80,
+      "name": "Neophron percnopterus",
+      "trademark": "FIELD",
+      "measure": "2l",
+      "price": 15.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Pisco",
+      "tags": []
+    },
+    {
+      "id": 81,
+      "name": "Passer domesticus",
+      "trademark": "Alacena.",
+      "measure": "80 g",
+      "price": 19.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Tequila",
+      "tags": []
+    },
+    {
+      "id": 82,
+      "name": "Acanthaster planci",
+      "trademark": "WINTER'S",
+      "measure": "50 kg",
+      "price": 11.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Galletas y Wafer",
+      "tags": []
+    },
+    {
+      "id": 83,
+      "name": "Eremophila alpestris",
+      "trademark": "Cuisine & Co",
+      "measure": "80 g",
+      "price": 6,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Jabón de Tocador",
+      "tags": []
+    },
+    {
+      "id": 84,
+      "name": "Galictis vittata",
+      "trademark": "Monteagle",
+      "measure": "60 g",
+      "price": 19.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Limpieza De Cocina",
+      "tags": []
+    },
+    {
+      "id": 85,
+      "name": "Rhea americana",
+      "trademark": "WINTER'S",
+      "measure": "3 l",
+      "price": 14.5,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Desayuno",
+      "tags": []
+    },
+    {
+      "id": 86,
+      "name": "Heloderma horridum",
+      "trademark": "Plusa",
+      "measure": "50 ud",
+      "price": 19.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Limpieza De Cocina",
+      "tags": []
+    },
+    {
+      "id": 87,
+      "name": "Papilio canadensis",
+      "trademark": "Monteagle",
+      "measure": "80 g",
+      "price": 16.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Cuidado del Cabello",
+      "tags": []
+    },
+    {
+      "id": 88,
+      "name": "Tayassu pecari",
+      "trademark": "San Jorge",
+      "measure": "60 g",
+      "price": 18.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Vodka",
+      "tags": []
+    },
+    {
+      "id": 89,
+      "name": "Grus canadensis",
+      "trademark": "KESHUA",
+      "measure": "2l",
+      "price": 2.4,
+      "image": "assets/images/product-loader.svg",
+      "category": "mascotas",
+      "subcategory": "Papel",
+      "tags": []
+    },
+    {
+      "id": 90,
+      "name": "Fulica cristata",
+      "trademark": "Alacena.",
+      "measure": "2l",
+      "price": 18.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "desayuno",
+      "tags": [
+        "Té"
+      ]
+    },
+    {
+      "id": 91,
+      "name": "Raphicerus campestris",
+      "trademark": "Don Vittorio",
+      "measure": "10 ud",
+      "price": 16.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Vino",
+      "tags": []
+    },
+    {
+      "id": 92,
+      "name": "Stercorarius longicausus",
+      "trademark": "Sibarita",
+      "measure": "100 ud",
+      "price": 16.8,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "conservas",
+      "tags": [
+        "Durazno"
+      ]
+    },
+    {
+      "id": 93,
+      "name": "Ciconia episcopus",
+      "trademark": "Laive",
+      "measure": "40 ud",
+      "price": 10.3,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Papel",
+      "tags": []
+    },
+    {
+      "id": 94,
+      "name": "Acanthaster planci",
+      "trademark": "Ajinomoto",
+      "measure": "5 kg",
+      "price": 11.7,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-hogar",
+      "subcategory": "Detergentes",
+      "tags": []
+    },
+    {
+      "id": 95,
+      "name": "Vanessa indica",
+      "trademark": "San Fernando",
+      "measure": "25 kg",
+      "price": 13.6,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Pisco",
+      "tags": []
+    },
+    {
+      "id": 96,
+      "name": "Phalaropus lobatus",
+      "trademark": "Danlac",
+      "measure": "5 l",
+      "price": 15.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-personal",
+      "subcategory": "Espumante",
+      "tags": []
+    },
+    {
+      "id": 97,
+      "name": "Axis axis",
+      "trademark": "D'ONOFRIO",
+      "measure": "100 g",
+      "price": 4.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "licores",
+      "subcategory": "Vino",
+      "tags": []
+    },
+    {
+      "id": 98,
+      "name": "Sarcophilus harrisii",
+      "trademark": "Molitalia",
+      "measure": "5 l",
+      "price": 9.9,
+      "image": "assets/images/product-loader.svg",
+      "category": "cuidado-del-bebe",
+      "subcategory": "Vino",
+      "tags": []
+    },
+    {
+      "id": 99,
+      "name": "Phalacrocorax carbo",
+      "trademark": "Ángel",
+      "measure": "40 g",
+      "price": 15.2,
+      "image": "assets/images/product-loader.svg",
+      "category": "confiteria",
+      "subcategory": "Vodka",
+      "tags": []
+    },
+    {
+      "id": 100,
+      "name": "Rhea americana",
+      "trademark": "Danlac",
+      "measure": "50 ud",
+      "price": 10.1,
+      "image": "assets/images/product-loader.svg",
+      "category": "abarrotes",
+      "subcategory": "desayuno",
+      "tags": [
+        "Café"
+      ]
+    }
+  ]
+}

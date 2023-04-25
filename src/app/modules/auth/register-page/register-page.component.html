@@ -1,0 +1,145 @@
+<section class="container">
+  <div class="content-general">
+    <div class="logo text-center">
+      <div class="logo-container bg-primary">
+        <a routerLink=""
+          ><img src="/assets/images/logo-withe.svg" title="Logo Mi Despensa"
+        /></a>
+      </div>
+    </div>
+
+    <div class="box-content">
+      <div class="step-box">
+        <hr />
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+      </div>
+      <h4>Registra una nueva cuenta</h4>
+      <form [formGroup]="formRegister" (ngSubmit)="continue()">
+        <div class="entradas">
+          <input
+            type="tel"
+            class="form-control"
+            placeholder="Número de celular"
+            formControlName="phone"
+          />
+          <!-- validation messages | phone -->
+          <ng-container *ngIf="ifFieldIsNotValid('phone')">
+            <div *ngIf="isValidBy('phone', 'required')" class="invalid">
+              El número de celular es obligatorio*
+            </div>
+            <div *ngIf="isValidBy('phone', 'pattern')" class="invalid">
+              Escriba un número válido de <b>nueve digitos</b> (999000111).
+            </div>
+            <div *ngIf="isValidBy('phone', 'exists')" class="invalid">
+              Este número ya <b>está registrado</b>.
+            </div>
+          </ng-container>
+          <!-- end validation -->
+
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Contraseña"
+            formControlName="password"
+          />
+          <!-- validation messages | password  -->
+          <ng-container *ngIf="ifFieldIsNotValid('password')">
+            <div *ngIf="isValidBy('password', 'required')" class="invalid">
+              La contraseña es obligatoria*
+            </div>
+            <div *ngIf="isValidBy('password', 'minlength')" class="invalid">
+              Es contraseña debe tener <b>mínimo ocho</b> carácteres*
+            </div>
+          </ng-container>
+          <!-- end validation-->
+
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirmar contraseña"
+            formControlName="confirm"
+          />
+          <!-- validation messages | confirm password  -->
+          <ng-container *ngIf="ifFieldIsNotValid('confirm')">
+            <div *ngIf="isValidBy('confirm', 'required')" class="invalid">
+              Confirme la contraseña por favor*
+            </div>
+            <div *ngIf="isValidBy('confirm', 'nomatch')" class="invalid">
+              La contraseña no coincide.
+            </div>
+          </ng-container>
+          <!-- end validation-->
+        </div>
+
+        <div class="ayuda text-end">
+          <a href="#">¿Necesitas ayuda?</a>
+        </div>
+
+        <div class="text-center botones-grup">
+          <button
+            data-bs-toggle="modal"
+            [attr.data-bs-target]="
+              formRegister.invalid ? null : '#confirma-tu-numero'
+            "
+            type="submit"
+            class="btn btn-danger"
+            [disabled]="formRegister.invalid"
+          >
+            Continuar</button
+          ><br />
+          <strong>o</strong> <br />
+          <a
+            routerLink="/auth/login"
+            type="button"
+            class="btn btn-outline-danger"
+            >Iniciar sesión</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="confirma-tu-numero" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <h4>Valida tu número</h4>
+
+        <form [formGroup]="formConfirmation" (ngSubmit)="confirmationCode()">
+          <div class="entradas">
+            <p>
+              Para confirmar tu número , ingresa el codigo que te enviamos vía
+              mensaje de texto a {{ this.formRegister.get("phone")?.value }}
+            </p>
+            <input
+              type="tel"
+              class="form-control"
+              placeholder="000 000"
+              formControlName="phone_code"
+            />
+          </div>
+
+          <div class="text-center botones-grup">
+            <button
+              [attr.data-bs-dismiss]="formConfirmation.invalid ? null : 'modal'"
+              type="submit"
+              class="btn btn-danger"
+              [disabled]="formConfirmation.invalid"
+            >
+              Continuar</button
+            ><br />
+            O <br />
+            <a
+              routerLink="/auth/register"
+              type="button"
+              class="btn btn-outline-danger"
+              data-bs-dismiss="modal"
+              >Cambiar número</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

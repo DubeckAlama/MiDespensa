@@ -1,0 +1,26 @@
+.mb-100 {
+  /* margin-bottom: 5rem; */
+  margin-bottom: 100px;
+}
+.box-search-results .col-3 {
+  width: 25% !important;
+  margin-right: 42px;
+}
+.box-search-results .col-8 {
+  margin-bottom: 20vh;
+}
+
+/* header  of page*/
+.box-search-results .col-8 h5{
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.encabezado{
+  margin-right: 2.5rem;
+}
+.box-search-results .col-8 .encabez-resultados{
+  font-size: 18px;
+}
+.box-search-results .col-8 .encabez-resultados .nro-result2{
+  margin-right: 8px;
+}

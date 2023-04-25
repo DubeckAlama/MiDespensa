@@ -1,0 +1,54 @@
+<!--
+  ***********
+  main  header
+  ***********
+ -->
+<div class="top-header mb-100">
+  <!-- header -->
+  <md-home-header></md-home-header>
+  <!-- end header -->
+
+  <!-- navbar -->
+  <md-home-navbar></md-home-navbar>
+  <!-- end navbar -->
+</div>
+
+<!-- end main header -->
+
+<!-- TODO: root content  -->
+<section class="container">
+  <div class="box-search-results">
+    <div class="row">
+      <div class="col-3">
+        <md-product-filters></md-product-filters>
+      </div>
+
+      <div class="col-8">
+        <div class="row encabezado">
+          <div class="col-10">
+              <h5>Mostrando resultados para <span>LECHE</span></h5>
+          </div>
+          <div class="col-1 d-flex encabez-resultados">
+              <span class="nro-result2">56</span><span>resultados</span>
+          </div>
+      </div>
+        <div class="row">
+          <!-- *TODO: content page -->
+          <!-- *here are the search results and filters -->
+          <ng-container *ngFor="let i of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+            <div class="col-4">
+              <md-product-card></md-product-card>
+            </div>
+          </ng-container>
+          <!-- *end results -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TODO: end root content  -->
+
+<!-- footer -->
+<md-footer></md-footer>
+<!-- end footer -->

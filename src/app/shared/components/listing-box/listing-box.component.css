@@ -1,0 +1,71 @@
+.cuadro-titulo {
+  background: #f5f5f5;
+  border-bottom: 4px solid;
+  border-bottom-color: #e4e4e4;
+  padding: 18px 38px 6px;
+}
+
+.cuadro-titulo .titulo {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.cuadro-lista {
+  background: #f5f5f5;
+  padding: 24px 10px 40px;
+}
+.cuadro-lista .lista-primary {
+  padding-left: 34px;
+}
+
+.cuadro-lista {
+  height: 464px;
+  overflow-y: scroll;
+}
+
+.cuadro-lista::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #e4e4e4;
+}
+
+.cuadro-lista::-webkit-scrollbar-thumb {
+  background: #a6a6a6;
+  border-radius: 14px;
+}
+
+.cuadro-lista .lista-primary label {
+  margin-bottom: 6px;
+}
+
+.form-check-input:checked {
+  background-color: #d6d6d6;
+}
+.form-check-input[type="checkbox"] {
+  border-radius: 0;
+}
+.form-check-input {
+  width: 1.1em;
+  height: 1.1em;
+  margin-top: 0.2em;
+  border: 1px solid rgb(0 0 0 / 46%);
+  background-color: #f5f5f5;
+}
+
+.form-check-input[type="checkbox"] {
+  position: relative;
+}
+.form-check-input:checked[type="checkbox"] {
+  background-image: none;
+}
+.form-check-input:checked[type="checkbox"]::after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2027.99%2020.47%22%3E%3Cpath%20d%3D%22M5.29%2C5.87l7.55%2C8.07L30.45-3.68%22%20transform%3D%22translate%28-3.88%205.09%29%22%20style%3D%22fill%3Anone%3Bstroke%3A%23414141%3Bstroke-linecap%3Asquare%3Bstroke-width%3A2px%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 3px;
+  top: -4px;
+}

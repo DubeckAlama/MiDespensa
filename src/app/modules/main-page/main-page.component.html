@@ -1,0 +1,2 @@
+<md-home-initial-page *ngIf="auth$ | async"></md-home-initial-page>
+<md-root-initial-page *ngIf="!(auth$ | async)"></md-root-initial-page>

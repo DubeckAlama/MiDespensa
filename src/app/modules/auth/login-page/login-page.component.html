@@ -1,0 +1,82 @@
+<section class="container">
+  <div class="content-general">
+    <div class="logo text-center">
+      <div class="logo-container bg-primary">
+        <a routerLink=""
+          ><img src="/assets/images/logo-withe.svg" title="Logo Mi Despensa"
+        /></a>
+      </div>
+    </div>
+
+    <div class="box-content">
+      <h4>Bienvenido nuevamente</h4>
+      <form [formGroup]="formLogin" (ngSubmit)="toAccess()" novalidate>
+        <div class="field">
+          <input
+            type="tel"
+            formControlName="phone"
+            autocomplete="false"
+            spellcheck="false"
+            placeholder="Número celular"
+          />
+          <div class="icon-mean">
+            <i class="fa-solid fa-circle-user"></i>
+          </div>
+        </div>
+        <!-- validation messages | phone -->
+        <ng-container *ngIf="ifFieldIsNotValid('phone')">
+          <div *ngIf="isValidBy('phone', 'required')" class="invalid">
+            Por favor ingrese su número.
+          </div>
+          <div *ngIf="isValidBy('phone', 'pattern')" class="invalid">
+            Ingrese un número válido de 9 digitos.
+          </div>
+        </ng-container>
+        <!-- end validation -->
+
+        <div class="field">
+          <input
+            type="password"
+            formControlName="password"
+            autocomplete="false"
+            spellcheck="false"
+            placeholder="Contraseña"
+          />
+          <div class="icon-mean">
+            <i class="fa-solid fa-key"></i>
+          </div>
+        </div>
+        <!-- validation messages | password  -->
+        <ng-container *ngIf="ifFieldIsNotValid('password')">
+          <div *ngIf="isValidBy('password', 'required')" class="invalid">
+            Por favor ingrese su contraseña.
+          </div>
+        </ng-container>
+
+        <div *ngIf="userNotFound" class="feedback-message" role="alert">
+          Número de celular o contraseña incorrecta.
+        </div>
+
+        <div *ngIf="unVerifiedUser" class="feedback-message" role="alert">
+          <span class="fw-bold">Hola {{ userName }}</span>, su dirección <u>aún no ha sido verificada*</u><br />
+          Por favor, contacte con nuestro servicio de atención al cliente.
+        </div>
+        <!-- end validation messages -->
+
+        <div class="ayuda text-end">
+          <a href="#">¿Olvidaste tu contraseña?</a><br />
+          <a href="#">¿Necesitas ayuda?</a>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-danger">Iniciar sesión</button
+          ><br />
+          <strong>o</strong> <br />
+          <a routerLink="/afiliate" type="button" class="btn btn-outline-danger"
+            >Afíliate</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

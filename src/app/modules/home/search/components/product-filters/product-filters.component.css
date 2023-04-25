@@ -1,0 +1,115 @@
+.borde-col3{
+  border: #acacac 1px solid;
+  padding: 18px 22px;
+}
+.cuadro-titulo{
+  margin-bottom: 60px;
+}
+.cuadro-titulo i{
+  margin-right:10px ;
+  font-size: 16px;
+}
+.cuadro-titulo h5{
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.cuadro-titulo .boton-prec-down{
+  --bs-btn-color: #858585;
+  --bs-btn-bg: #fff;
+  --bs-btn-hover-border-color: #c6c7c8;
+  border-radius: 0px;
+  border: 1.5px solid #c6c7c8;
+  padding: 2px 10px ;
+  margin-right: 14px;
+}
+.cuadro-titulo .boton-prec-down i{
+  margin-left: 10px;
+  margin-right: 0;
+  border-radius: 0px;
+}
+.cuadro-titulo .boton-prec-up{
+  border-radius: 0px;
+  padding: 2px 10px;
+  --bs-btn-bg:#858585;
+  --bs-btn-border-color: #858585;
+  --bs-btn-hover-bg: #858585;
+  margin-right: 0;
+}
+.cuadro-titulo .boton-prec-up i{
+  vertical-align: middle;
+  border-radius: 0;
+  margin-right: 0;
+  margin-left: 10px;
+}
+.cuadro-lista h5{
+  font-size: 17px;
+  font-weight: 600;
+}
+.cuadro-lista .filtro-i{
+  font-size: 16px;
+}
+.cuadro-lista h6{
+  font-size: 17px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.cuadro-lista .form-check-input:checked{
+  background-color: darkgray;
+}
+.cuadro-lista .form-check-input[type=checkbox] {
+  border-radius: 0;
+}
+.cuadro-lista .form-check-input {
+  width: 1.1em;
+  height: 1.1em;
+  margin-top: 0.2em;
+  border: 1px solid rgb(0 0 0 / 46%);
+}
+.cuadro-lista .pre-desde{
+  margin-bottom: 8px;
+}
+.cuadro-lista .pre-hasta{
+  margin-bottom: 50px;
+}
+.cuadro-lista .pre-desde span{
+  font-size: 16.5px;
+}
+.cuadro-lista .pre-hasta span{
+  font-size: 16.5px
+}
+
+.cuadro-lista .moneda{
+  margin-right: 8px;
+  font-size: 17px;
+}
+.cuadro-lista input{
+  width: 76px;
+  border-radius: 0;
+  border:#cacaca 2px solid;
+  background-color: #EFEFEF;
+}
+ .botones-grup a{
+  border-radius: 50px;
+  font-size: 17px;
+  padding: 2px 32px;
+}
+ .botones-grup .boton-aplicar{
+  border-radius: 50px;
+  padding: 3px 32px;
+  font-size: 17px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+ .botones-grup .btn-danger {
+  --bs-btn-bg: #E2032B !important;
+  --bs-btn-hover-bg: #E2032B !important;
+}
+ .botones-grup .btn-outline-danger{
+  --bs-btn-hover-bg: #E2032B !important;
+  --bs-btn-border-width: 0.121rem;
+  --bs-btn-border-color: #E2032B !important;
+
+}

@@ -1,0 +1,104 @@
+body{
+  background-color: #EFEFEF;
+}
+
+/*contenido de formulario*/
+section .content-general{
+  width: 100%;
+  margin: 100px auto;
+  max-width: 800px;
+  padding: 18px;
+
+}
+
+section .box-content{
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 560px;
+  padding: 70px 30px 20px 30px;
+  border: 1px solid #cacaca;
+  border-radius: 20px ;
+}
+
+section .logo{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100px;
+
+}
+section .logo .logo-container{
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  box-shadow: 0 .3rem .25rem rgba(0,0,0,.300);
+}
+section .logo .logo-container img{
+  width: 58px;
+  position: absolute;
+  top: 56%;
+  left: 50.5%;
+  transform: translate(-50%,-50%);
+}
+
+section .content-general h4{
+  color: #E62B4D;
+  font-weight: bold;
+  padding-bottom: 24px;
+  text-align: center;
+}
+/*------------------------------*/
+
+section .box-content .caja{
+  border: #cacaca 1px solid;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0.3rem 0.6rem rgb(0 0 0 / 20%);
+}
+section .box-content .caja a{
+  text-decoration: none;
+  --bs-link-color: black;
+}
+section .box-content .caja a:hover{
+  color: black;
+}
+section .box-content .caja hr {
+  margin: 0px;
+}
+section .box-content .caja h6{
+  font-weight: bold;
+  padding-top: 10px;
+}
+section .box-content .caja img {
+  border-radius: 20px 20px 0 0;
+
+}
+section .box-content .row .parraf-1{
+  text-align: justify;
+  font-size: 15px;
+  padding: 20px 11px 6px 11px;
+  text-align-last: center;
+  color: #828282;
+}
+section .box-content .row .parraf-2{
+  text-align: justify;
+  font-size: 15px;
+  padding: 20px 37px;
+  color: #828282;
+}
+section .box-content strong{
+  font-size: 19px;
+}
+section .box-content .text-center .btn-outline-danger{
+  font-weight: bold;
+  --bs-btn-hover-bg: #E2032B !important;
+  --bs-btn-border-width: 0.121rem;
+  --bs-btn-border-color: #E2032B !important;
+  width: 226px;
+  border-radius: 50px;
+  font-size: 17px;
+  padding: 12px;
+  margin: 12px 0 0 0;
+}

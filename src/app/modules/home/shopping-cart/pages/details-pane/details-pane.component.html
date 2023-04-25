@@ -1,0 +1,217 @@
+<ng-container *ngIf="product > 0; else emptyPane">
+  <div class="box-info2">
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button
+          class="nav-link active"
+          id="nav-resumen-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-resumen"
+          type="button"
+          role="tab"
+          aria-controls="nav-resumen"
+          aria-selected="true"
+        >
+          Resumen
+        </button>
+        <button
+          class="nav-link"
+          id="nav-puntos-tab"
+          data-bs-toggle="tab"
+          data-bs-target="#nav-puntos"
+          type="button"
+          role="tab"
+          aria-controls="nav-puntos"
+          aria-selected="false"
+        >
+          Puntos
+        </button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="nav-resumen"
+        role="tabpanel"
+        aria-labelledby="nav-resumen-tab"
+        tabindex="0"
+      >
+        <div class="content-resumen">
+          <div class="row espacio-direc-fech-tip">
+            <div class="col-5 columna-a">
+              <label for="">Dirección de entrega</label>
+            </div>
+            <div class="col-6 columna-b">
+              <div class="dropdown-center">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Las Rosas #567
+                </button>
+                <ul class="dropdown-menu w-204">
+                  <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                  <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row espacio-direc-fech-tip">
+            <div class="col-5 columna-a">
+              <label for="">Fecha de entrega</label>
+            </div>
+            <div class="col-6 columna-b">
+              <input type="date" />
+            </div>
+          </div>
+          <div class="row espacio-direc-fech-tip">
+            <div class="col-5 columna-a">
+              <label for="">Tipo de documento</label>
+            </div>
+            <div class="col-6 columna-b">
+              <div class="dropdown-center">
+                <button
+                  class="btn btn-light dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Boleta
+                </button>
+                <ul class="dropdown-menu w-204">
+                  <li><a class="dropdown-item">Opción 1</a></li>
+                  <li><a class="dropdown-item">Opción 2</a></li>
+                  <li><a class="dropdown-item">Opción 3</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="resumn-compra">
+            <div class="row resu-net-env-impues">
+              <div class="col-6">
+                <h6>Neto</h6>
+              </div>
+              <div class="col text-end">
+                <span>S/ 588.50</span>
+              </div>
+            </div>
+            <div class="row resu-net-env-impues">
+              <div class="col-6">
+                <h6>Envío</h6>
+              </div>
+              <div class="col text-end">
+                <span>S/ 588.50</span>
+              </div>
+            </div>
+            <div class="row resu-net-env-impues">
+              <div class="col-6">
+                <h6>Impuesto</h6>
+              </div>
+              <div class="col text-end">
+                <span>S/ 0.85</span>
+              </div>
+            </div>
+            <div class="row resu-sub-total">
+              <div class="col-6">
+                <h6>Subtotal</h6>
+              </div>
+              <div class="col text-end">
+                <span>S/ 588.50</span>
+              </div>
+            </div>
+          </div>
+          <div class="boton-confirmar text-center">
+            <button
+              type="button"
+              class="btn btn-danger btn-confirmo"
+              data-bs-toggle="modal"
+              data-bs-target="#ConfimarPedModal"
+            >
+              Confimar pedido</button
+            ><br />
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade segundo-panel"
+        id="nav-puntos"
+        role="tabpanel"
+        aria-labelledby="nav-puntos-tab"
+        tabindex="0"
+      >
+        <div class="borde-difuminado">
+          <div class="borde-cuadro">
+            <div class="row">
+              <div class="col-5 columna-c">
+                <img src="/assets/images/product-loader.svg" alt="" />
+              </div>
+              <div class="col-5 columna-d">
+                <h6>Gomitas Ambrosito / AMBROSOLI X100g</h6>
+                <span class="txt-pre-uni">S/ 4.39</span
+                ><span class="nro-puntos">+350pts</span>
+                <div class="btn-accso text-center">
+                  <a href="#" type="button" class="btn btn-outline-danger"
+                    >Agregar</a
+                  ><br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flecha text-start">
+          <div class="slide-btn-izquierda">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+        </div>
+        <div class="flecha-2 text-end">
+          <div class="slide-btn-derecha">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="boton-vermas text-center">
+          <a
+            href="/layouts/login_inicio_mis_puntos1.html"
+            type="button"
+            class="btn btn-danger"
+            >Ver más</a
+          ><br />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal fade"
+    id="ConfimarPedModal"
+    tabindex="-1"
+    aria-labelledby="ConfimarPedModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content text-center">
+        <div class="logo-midespensa">
+          <img src="/assets/images/midespensa-logo.svg" alt="" />
+        </div>
+        <h5>¡Tu pedido se ha procesado exitosamente!</h5>
+        <div class="img-carrito-midesp">
+          <img src="/assets/images/Borrador_img_3.jpg" alt="" />
+        </div>
+        <div class="btn-volver-catalog text-center">
+          <a
+            href="/layouts/Index-login.html"
+            type="button"
+            class="btn btn-danger"
+            >Volver al catálogo</a
+          ><br />
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #emptyPane>
+  <md-empty-pane></md-empty-pane>
+</ng-template>

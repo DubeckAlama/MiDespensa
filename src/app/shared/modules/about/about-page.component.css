@@ -1,0 +1,68 @@
+/*miga de pan*/
+section ul {
+  padding: 60px 60px 60px 140px !important;
+  --bs-nav-link-padding-y: 0rem !important;
+  --bs-nav-link-padding-x: 0.6rem !important;
+  --bs-nav-link-color: black !important;
+  --bs-nav-link-hover-color:black !important;
+}
+/*documento*/
+section .doc-contenido{
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 74px;
+  max-width: 730px;
+  border: #b6b6b6 solid 2px;
+  padding: 40px 42px;
+}
+.doc-contenido h5{
+  font-weight: bold;
+  font-size: 18px;
+}
+.doc-contenido img {
+  width: 84px;
+  padding-top: 2px;
+}
+.doc-contenido .col-10{
+  padding-left: 30px;
+}
+
+.doc-contenido .compatible{
+  width: 500px;
+  margin-top: 44px;
+}
+.doc-contenido h6{
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.doc-contenido .libreria i{
+  font-size: 4.5px;
+  vertical-align: middle;
+  padding: 0 5px;
+  color: #a6a6a6;
+}
+.doc-contenido .col-8 a{
+  color: #E2032B;
+}
+
+button{
+  border: #b6b6b6 solid 1px !important;
+  border-radius: 50px !important;
+  margin: 50px 0px 10px 0;
+  padding: 2px 4px 2px ;
+}
+
+button i{
+  font-size: 15px;
+  padding: 0 6px 0 10px;
+}
+button a{
+  color: black;
+  text-decoration: none;
+  padding-right: 12px;
+}
+button a:hover{
+  color: black;
+}

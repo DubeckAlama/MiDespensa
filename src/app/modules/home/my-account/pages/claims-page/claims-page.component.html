@@ -1,0 +1,11 @@
+<div [ngSwitch]="activeForm">
+  <div *ngSwitchCase="'new-claim'">
+    <md-new-claim-form></md-new-claim-form>
+  </div>
+  <div *ngSwitchCase="'registered'">
+    <md-registered-claim></md-registered-claim>
+  </div>
+  <div *ngSwitchDefault>
+    <md-claims-history></md-claims-history>
+  </div>
+</div>

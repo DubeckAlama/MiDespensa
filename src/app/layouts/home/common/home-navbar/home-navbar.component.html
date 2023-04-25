@@ -1,0 +1,480 @@
+<nav class="bg-gray">
+  <div class="contain-er menu-container">
+    <div class="logo">
+      <div class="logo-container bg-primary">
+        <a routerLink=""><img src="/assets/images/logo-withe.svg" title="Logo Mi Despensa" /></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-5">
+        <div class="buscador">
+          <div class="row">
+            <div class="col-11">
+              <input type="text" placeholder="¿Qué necesitas?" />
+            </div>
+            <div class="col-1">
+              <a class="mouse-click">
+                <i (click)="goToResults()" class="fa-solid fa-magnifying-glass">
+                </i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="btn-access text-end">
+          <a routerLink="/mi-cuenta/direccion-de-entrega" class="btn btn-outline-primary text-primary name_addres"><i
+              class="fa-solid fa-location-dot"></i>
+            {{ (address$ | async)?.address }}
+          </a>
+
+          <a routerLink="/carrito" class="btn-espacio position-relative">
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill count">{{ count }}</span>
+          </a>
+
+          <a routerLink="/mi-cuenta/lista-de-deseos" class="btn-espacio"><i class="fa-solid fa-heart"></i></a>
+          <a routerLink="/mi-cuenta" class="btn btn-outline-primary text-primary"><i class="fa-solid fa-user"></i> {{
+            profile.names }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="nav nav-pills flex-column flex-sm-row">
+  <ul class="nav nav-pills" id="pills-tab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link button-todo" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+        type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+        Todo
+      </button>
+    </li>
+  </ul>
+
+  <a *ngFor="let category of categories" class="flex-sm-fill text-sm-center nav-link"
+    routerLink="/categoria/{{ category.slug }}" routerLinkActive="active">
+    {{ category.name }}
+  </a>
+</nav>
+
+<div class="menu-todo tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    <div class="d-flex align-items-start">
+      <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link button-menu-todo btn-menu-todo-up active" id="v-pills-abarrotes03-tab"
+          data-bs-toggle="pill" data-bs-target="#v-pills-abarrotes03" type="button" role="tab"
+          aria-controls="v-pills-abarrotes03" aria-selected="true">
+          Abarrotes
+        </button>
+        <button class="nav-link button-menu-todo" id="v-pills-confiteria03-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-confiteria03" type="button" role="tab" aria-controls="v-pills-confiteria03"
+          aria-selected="false">
+          Confitería
+        </button>
+        <button class="nav-link button-menu-todo" id="v-pills-cuidadohogar03-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-cuidadohogar03" type="button" role="tab" aria-controls="v-pills-cuidadohogar03"
+          aria-selected="false">
+          Cuidado del hogar
+        </button>
+        <button class="nav-link button-menu-todo" id="v-pills-cuidadopersonal03-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-cuidadopersonal03" type="button" role="tab" aria-controls="v-pills-cuidadopersonal03"
+          aria-selected="false">
+          Cuidado personal
+        </button>
+        <button class="nav-link button-menu-todo" id="v-pills-cuidadobebe03-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-cuidadobebe03" type="button" role="tab" aria-controls="v-pills-cuidadobebe03"
+          aria-selected="false">
+          Cuidado del bebé
+        </button>
+        <button class="nav-link button-menu-todo" id="v-pills-licores03-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-licores03" type="button" role="tab" aria-controls="v-pills-licores03"
+          aria-selected="false">
+          Licores
+        </button>
+        <button class="nav-link button-menu-todo btn-menu-todo-down" id="v-pills-mascotas03-tab" data-bs-toggle="pill"
+          data-bs-target="#v-pills-mascotas03" type="button" role="tab" aria-controls="v-pills-mascotas03"
+          aria-selected="false">
+          Mascotas
+        </button>
+      </div>
+
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-abarrotes03" role="tabpanel"
+          aria-labelledby="v-pills-abarrotes03-tab" tabindex="0">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Afeitado y depilación</h6>
+              <a href="#">Depilación</a><br />
+              <a href="#">Espuma</a><br />
+              <a href="#">Máquinas de afeitar</a>
+            </div>
+            <div class="col-2">
+              <h6>Botiquín</h6>
+              <a href="#">Artículos</a><br />
+              <a href="#">Alcohol líquido</a><br />
+              <a href="#">Alcohol en gel</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado bucal</h6>
+              <a href="#">Cepillos</a><br />
+              <a href="#">Enjuage</a><br />
+              <a href="#">Pastas</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado de la piel</h6>
+              <a href="#">Pañuelos faciales</a><br />
+              <a href="#">Desmaquillantes</a><br />
+            </div>
+          </div>
+
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Cuidado de cabello</h6>
+              <a href="#">Acondicionador</a><br />
+              <a href="#">Cremas para peinar</a><br />
+              <a href="#">Shammpoo</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado personal</h6>
+              <a href="#">Desodorantes masculinos</a><br />
+              <a href="#">Desodorantes femeninos</a><br />
+              <a href="#">Jabones de tocador</a><br />
+              <a href="#">Jabones líquidos</a>
+            </div>
+            <div class="col-2">
+              <h6>Protección Femenina</h6>
+              <a href="#">Protectores diarios</a><br />
+              <a href="#">Tampones</a><br />
+              <a href="#">Toallas higiénicas</a>
+            </div>
+            <div class="col"></div>
+            <div class="btn-accss text-end">
+              <a href="#" type="button" class="btn btn-outline-danger">Ver todo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="v-pills-confiteria03" role="tabpanel" aria-labelledby="v-pills-confiteria03-tab"
+          tabindex="0">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Afeitado y depilación</h6>
+              <a href="#">Depilación</a><br />
+              <a href="#">Espuma</a><br />
+              <a href="#">Máquinas de afeitar</a>
+            </div>
+            <div class="col-2">
+              <h6>Botiquín</h6>
+              <a href="#">Artículos</a><br />
+              <a href="#">Alcohol líquido</a><br />
+              <a href="#">Alcohol en gel</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado bucal</h6>
+              <a href="#">Cepillos</a><br />
+              <a href="#">Enjuage</a><br />
+              <a href="#">Pastas</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado de la piel</h6>
+              <a href="#">Pañuelos faciales</a><br />
+              <a href="#">Desmaquillantes</a><br />
+            </div>
+          </div>
+
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Cuidado de cabello</h6>
+              <a href="#">Acondicionador</a><br />
+              <a href="#">Cremas para peinar</a><br />
+              <a href="#">Shammpoo</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado personal</h6>
+              <a href="#">Desodorantes masculinos</a><br />
+              <a href="#">Desodorantes femeninos</a><br />
+              <a href="#">Jabones de tocador</a><br />
+              <a href="#">Jabones líquidos</a>
+            </div>
+            <div class="col-2">
+              <h6>Protección Femenina</h6>
+              <a href="#">Protectores diarios</a><br />
+              <a href="#">Tampones</a><br />
+              <a href="#">Toallas higiénicas</a>
+            </div>
+            <div class="col"></div>
+            <div class="btn-accss text-end">
+              <a href="#" type="button" class="btn btn-outline-danger">Ver todo</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-cuidadohogar03" role="tabpanel"
+          aria-labelledby="v-pills-cuidadohogar03-tab" tabindex="0">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Afeitado y depilación</h6>
+              <a href="#">Depilación</a><br />
+              <a href="#">Espuma</a><br />
+              <a href="#">Máquinas de afeitar</a>
+            </div>
+            <div class="col-2">
+              <h6>Botiquín</h6>
+              <a href="#">Artículos</a><br />
+              <a href="#">Alcohol líquido</a><br />
+              <a href="#">Alcohol en gel</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado bucal</h6>
+              <a href="#">Cepillos</a><br />
+              <a href="#">Enjuage</a><br />
+              <a href="#">Pastas</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado de la piel</h6>
+              <a href="#">Pañuelos faciales</a><br />
+              <a href="#">Desmaquillantes</a><br />
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Cuidado de cabello</h6>
+              <a href="#">Acondicionador</a><br />
+              <a href="#">Cremas para peinar</a><br />
+              <a href="#">Shammpoo</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado personal</h6>
+              <a href="#">Desodorantes masculinos</a><br />
+              <a href="#">Desodorantes femeninos</a><br />
+              <a href="#">Jabones de tocador</a><br />
+              <a href="#">Jabones líquidos</a>
+            </div>
+            <div class="col-2">
+              <h6>Protección Femenina</h6>
+              <a href="#">Protectores diarios</a><br />
+              <a href="#">Tampones</a><br />
+              <a href="#">Toallas higiénicas</a>
+            </div>
+            <div class="col"></div>
+            <div class="btn-accss text-end">
+              <a href="#" type="button" class="btn btn-outline-danger">Ver todo</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-cuidadopersonal03" role="tabpanel"
+          aria-labelledby="v-pills-cuidadopersonal03-tab" tabindex="0">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Afeitado y depilación</h6>
+              <a href="#">Depilación</a><br />
+              <a href="#">Espuma</a><br />
+              <a href="#">Máquinas de afeitar</a>
+            </div>
+            <div class="col-2">
+              <h6>Botiquín</h6>
+              <a href="#">Artículos</a><br />
+              <a href="#">Alcohol líquido</a><br />
+              <a href="#">Alcohol en gel</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado bucal</h6>
+              <a href="#">Cepillos</a><br />
+              <a href="#">Enjuage</a><br />
+              <a href="#">Pastas</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado de la piel</h6>
+              <a href="#">Pañuelos faciales</a><br />
+              <a href="#">Desmaquillantes</a><br />
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Cuidado de cabello</h6>
+              <a href="#">Acondicionador</a><br />
+              <a href="#">Cremas para peinar</a><br />
+              <a href="#">Shammpoo</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado personal</h6>
+              <a href="#">Desodorantes masculinos</a><br />
+              <a href="#">Desodorantes femeninos</a><br />
+              <a href="#">Jabones de tocador</a><br />
+              <a href="#">Jabones líquidos</a>
+            </div>
+            <div class="col-2">
+              <h6>Protección Femenina</h6>
+              <a href="#">Protectores diarios</a><br />
+              <a href="#">Tampones</a><br />
+              <a href="#">Toallas higiénicas</a>
+            </div>
+            <div class="col"></div>
+            <div class="btn-accss text-end">
+              <a href="#" type="button" class="btn btn-outline-danger">Ver todo</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-cuidadobebe03" role="tabpanel"
+          aria-labelledby="v-pills-cuidadobebe03-tab" tabindex="0">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Afeitado y depilación</h6>
+              <a href="#">Depilación</a><br />
+              <a href="#">Espuma</a><br />
+              <a href="#">Máquinas de afeitar</a>
+            </div>
+            <div class="col-2">
+              <h6>Botiquín</h6>
+              <a href="#">Artículos</a><br />
+              <a href="#">Alcohol líquido</a><br />
+              <a href="#">Alcohol en gel</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado bucal</h6>
+              <a href="#">Cepillos</a><br />
+              <a href="#">Enjuage</a><br />
+              <a href="#">Pastas</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado de la piel</h6>
+              <a href="#">Pañuelos faciales</a><br />
+              <a href="#">Desmaquillantes</a><br />
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Cuidado de cabello</h6>
+              <a href="#">Acondicionador</a><br />
+              <a href="#">Cremas para peinar</a><br />
+              <a href="#">Shammpoo</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado personal</h6>
+              <a href="#">Desodorantes masculinos</a><br />
+              <a href="#">Desodorantes femeninos</a><br />
+              <a href="#">Jabones de tocador</a><br />
+              <a href="#">Jabones líquidos</a>
+            </div>
+            <div class="col-2">
+              <h6>Protección Femenina</h6>
+              <a href="#">Protectores diarios</a><br />
+              <a href="#">Tampones</a><br />
+              <a href="#">Toallas higiénicas</a>
+            </div>
+            <div class="col"></div>
+            <div class="btn-accss text-end">
+              <a href="#" type="button" class="btn btn-outline-danger">Ver todo</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-licores03" role="tabpanel" aria-labelledby="v-pills-licores03-tab"
+          tabindex="0">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Afeitado y depilación</h6>
+              <a href="#">Depilación</a><br />
+              <a href="#">Espuma</a><br />
+              <a href="#">Máquinas de afeitar</a>
+            </div>
+            <div class="col-2">
+              <h6>Botiquín</h6>
+              <a href="#">Artículos</a><br />
+              <a href="#">Alcohol líquido</a><br />
+              <a href="#">Alcohol en gel</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado bucal</h6>
+              <a href="#">Cepillos</a><br />
+              <a href="#">Enjuage</a><br />
+              <a href="#">Pastas</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado de la piel</h6>
+              <a href="#">Pañuelos faciales</a><br />
+              <a href="#">Desmaquillantes</a><br />
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Cuidado de cabello</h6>
+              <a href="#">Acondicionador</a><br />
+              <a href="#">Cremas para peinar</a><br />
+              <a href="#">Shammpoo</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado personal</h6>
+              <a href="#">Desodorantes masculinos</a><br />
+              <a href="#">Desodorantes femeninos</a><br />
+              <a href="#">Jabones de tocador</a><br />
+              <a href="#">Jabones líquidos</a>
+            </div>
+            <div class="col-2">
+              <h6>Protección Femenina</h6>
+              <a href="#">Protectores diarios</a><br />
+              <a href="#">Tampones</a><br />
+              <a href="#">Toallas higiénicas</a>
+            </div>
+            <div class="col"></div>
+            <div class="btn-accss text-end">
+              <a href="#" type="button" class="btn btn-outline-danger">Ver todo</a>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="v-pills-mascotas03" role="tabpanel" aria-labelledby="v-pills-mascotas03-tab"
+          tabindex="0">
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Afeitado y depilación</h6>
+              <a href="#">Depilación</a><br />
+              <a href="#">Espuma</a><br />
+              <a href="#">Máquinas de afeitar</a>
+            </div>
+            <div class="col-2">
+              <h6>Botiquín</h6>
+              <a href="#">Artículos</a><br />
+              <a href="#">Alcohol líquido</a><br />
+              <a href="#">Alcohol en gel</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado bucal</h6>
+              <a href="#">Cepillos</a><br />
+              <a href="#">Enjuage</a><br />
+              <a href="#">Pastas</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado de la piel</h6>
+              <a href="#">Pañuelos faciales</a><br />
+              <a href="#">Desmaquillantes</a><br />
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-2">
+              <h6>Cuidado de cabello</h6>
+              <a href="#">Acondicionador</a><br />
+              <a href="#">Cremas para peinar</a><br />
+              <a href="#">Shammpoo</a>
+            </div>
+            <div class="col-2">
+              <h6>Cuidado personal</h6>
+              <a href="#">Desodorantes masculinos</a><br />
+              <a href="#">Desodorantes femeninos</a><br />
+              <a href="#">Jabones de tocador</a><br />
+              <a href="#">Jabones líquidos</a>
+            </div>
+            <div class="col-2">
+              <h6>Protección Femenina</h6>
+              <a href="#">Protectores diarios</a><br />
+              <a href="#">Tampones</a><br />
+              <a href="#">Toallas higiénicas</a>
+            </div>
+            <div class="col"></div>
+            <div class="btn-accss text-end">
+              <a href="#" type="button" class="btn btn-outline-danger">Ver todo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

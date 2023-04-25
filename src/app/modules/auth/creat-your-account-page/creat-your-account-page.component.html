@@ -1,0 +1,99 @@
+<section class="container">
+  <div class="content-general">
+    <div class="logo text-center">
+      <div class="logo-container bg-primary">
+        <a routerLink=""
+          ><img src="/assets/images/logo-withe.svg" atl="Logo Mi Despensa"
+        /></a>
+      </div>
+    </div>
+
+    <div class="box-content">
+      <div class="step-box">
+        <hr />
+        <div></div>
+        <div></div>
+        <div class="active"></div>
+      </div>
+      <h4>Crea tu cuenta</h4>
+      <form action="">
+        <div class="entradas">
+          <input
+            type="tel"
+            class="form-control"
+            placeholder="987654321"
+            required="required"
+          />
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Contraseña"
+            required="required"
+          />
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Confirmar contraseña"
+            required="required"
+          />
+        </div>
+
+        <div class="ayuda text-end">
+          <a href="#">¿Necesitas ayuda?</a>
+        </div>
+
+        <div class="text-center botones-grup">
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#continuar"
+            type="button"
+            class="btn btn-danger"
+          >
+            Continuar</button
+          ><br />
+          <strong>o</strong> <br />
+          <a
+            routerLink="/auth/login"
+            type="button"
+            data-bs-toggle="modal"
+            class="btn btn-outline-danger"
+            >Iniciar sesión</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="continuar" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="text-center">
+        <img src="/assets/images/midespensa-logo.svg" alt="" />
+      </div>
+
+      <h4>¡Te has registrado exitosamente!</h4>
+
+      <form>
+        <div class="entradas">
+          <p>
+            En unos días, un vendedor llegará a tu negocio en //DIRECCION
+            PREDETERMINADA// para verificar tus datos. Completado este proceso
+            regresa a Mi Despensa para comprar y disfrutar de todas las
+            promociones que tenemos para ti.
+          </p>
+        </div>
+
+        <div class="text-center botones-grup">
+          <a
+            routerLink=""
+            type="button"
+            data-bs-dismiss="modal"
+            class="btn btn-danger"
+            >Regresar a inicio</a
+          ><br />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

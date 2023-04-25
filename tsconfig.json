@@ -1,0 +1,44 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "paths": {
+      // app core
+      "@app/core/auth": ["src/app/core/auth/index.ts"],
+      "@app/core/services": ["src/app/core/services/index.ts"],
+      "@app/core/models": ["src/app/core/models/index.ts"],
+      "@app/core/interfaces": ["src/app/core/interfaces/index.ts"],
+      "@app/core/validators": ["src/app/core/validators/index.ts"],
+      "@app/core/enums": ["src/app/core/enums/index.ts"],
+      "@app/core/utils": ["src/app/core/utils/index.ts"],
+      "@app/data": ["src/app/data/index.ts"],
+      // --------------------------------------------------------
+      "@layouts/*": ["src/app/layouts/*"],
+      "@shared-modules/*": ["src/app/shared/modules/*"],
+      "@shared-components/*": ["src/app/shared/components/*"]
+    },
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": ["es2020", "dom"]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}

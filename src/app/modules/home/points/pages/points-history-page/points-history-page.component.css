@@ -1,0 +1,98 @@
+.cuadro-titulo {
+  background: #c8c8c8;
+  border-bottom: 4px solid;
+  border-bottom-color: #cacaca;
+  padding: 16px 0 4px 26px;
+}
+
+.cuadro-lista {
+  background: #f5f5f5;
+  padding: 12px 0px 0px 0px;
+}
+.cuadro-lista a {
+  text-decoration: none;
+  color: black;
+}
+
+.borde-cuadro {
+  border: solid 1px #c2c2c2;
+  height: 96px;
+  padding: 16px 26px;
+  margin: 16px 28px;
+}
+
+.box-derecho .borde-cuadro .fila-1 {
+  margin-bottom: -118px;
+}
+.box-derecho .borde-cuadro .fila-1 .column-5 {
+  width: 53%;
+}
+.box-derecho .borde-cuadro .fila-2 .column-5 {
+  width: 53%;
+}
+.box-derecho .borde-cuadro .fila-1 .column-3 {
+  width: 21%;
+}
+.box-derecho .borde-cuadro .fila-2 .column-3 {
+  width: 21%;
+}
+.box-derecho .borde-cuadro .fila-1 .column-2 {
+  width: 16%;
+}
+.box-derecho .borde-cuadro .fila-2 .column-2 {
+  width: 15%;
+}
+.borde-cuadro h6 {
+  font-weight: bold;
+  font-size: 17px;
+}
+.borde-cuadro .fa-box-archive {
+  margin-right: 12px;
+  color: #9f9f9f;
+}
+.borde-cuadro .txt-act {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.borde-cuadro .texto-plomo {
+  color: #919191;
+  font-size: 15px;
+}
+.borde-cuadro .color-puntos1 {
+  color: #68b738;
+  font-size: 19px;
+  font-weight: bold;
+}
+.borde-cuadro .color-puntos2 {
+  color: #e2032b;
+  font-size: 19px;
+  font-weight: bold;
+}
+/*pie de pagina numeración*/
+.page-link {
+  border: none;
+  background-color: transparent;
+}
+.pagination {
+  font-weight: bold;
+  font-size: 18px;
+  --bs-pagination-active-bg: #d6d6d6;
+  --bs-pagination-active-border-color: #dedede;
+  --bs-pagination-hover-bg: none;
+  --bs-pagination-focus-bg: none;
+  --bs-pagination-focus-box-shadow: none;
+  place-content: center;
+  padding: 20px;
+  margin-bottom: 0px;
+}
+.color-red {
+  color: #e2032b;
+}
+.pagination .de-pdn {
+  margin: 5px 2px 0 10px;
+  font-weight: lighter;
+}
+.pagination .pag-pdn {
+  margin: 5px 6px 0 0;
+  font-weight: lighter;
+}

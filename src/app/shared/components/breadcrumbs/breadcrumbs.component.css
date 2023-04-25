@@ -1,0 +1,14 @@
+.breadcrumbs-1{
+  padding: 60px 60px 60px 140px !important;
+  --bs-nav-link-padding-y: 0rem !important;
+  --bs-nav-link-padding-x: 0.6rem !important;
+  --bs-nav-link-color: black !important;
+  --bs-nav-link-hover-color:black !important;
+}
+.breadcrumbs-2{
+  padding: 60px 60px 60px 30px !important;
+    --bs-nav-link-padding-y: 0rem !important;
+    --bs-nav-link-padding-x: 0.6rem !important;
+    --bs-nav-link-color: black !important;
+    --bs-nav-link-hover-color: black !important;
+}

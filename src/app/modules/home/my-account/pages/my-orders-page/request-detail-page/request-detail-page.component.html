@@ -1,0 +1,259 @@
+<!--
+  ***********
+  main  header
+  ***********
+ -->
+<div class="top-header">
+  <!-- header -->
+  <md-home-header></md-home-header>
+  <!-- end header -->
+
+  <!-- navbar -->
+  <md-home-navbar></md-home-navbar>
+  <!-- end navbar -->
+</div>
+
+<!-- end main header -->
+
+<!-- TODO: root content  -->
+<section class="container">
+  <div class="box-mispedidos">
+    <div class="row principal-row">
+      <div class="col-3 columnap-1">
+        <a
+          routerLink="/mi-cuenta/pedidos"
+          type="button"
+          class="btn btn-danger"
+          >Regresar a mis pedidos</a
+        >
+      </div>
+      <div class="col-8 columnap-2">
+        <div class="sub-titulo">
+          <div class="row">
+            <div class="col-8">
+              <h2>Pedido: <span class="codigo-1">PD0000018264</span></h2>
+            </div>
+            <div class="col-4 text-end">
+              <button class="btn btn-success">Completado</button>
+            </div>
+          </div>
+        </div>
+        <div class="conten-lderecho">
+          <div class="row justify-content-md-center row-der-1 text-center">
+            <div class="col col-lg-2 icon-pedidos linea-l">
+              <h3>Aprobado</h3>
+              <div class="marco-i">
+                <i class="fa-solid fa-clipboard-check"></i>
+              </div>
+            </div>
+            <div class="col col-lg-2 icon-pedidos linea-l">
+              <h3>Enviado</h3>
+              <div class="marco-i">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+            </div>
+
+            <div class="col col-lg-2">
+              <h3>Recibido</h3>
+              <div class="marco-i">
+                <i class="fa-solid fa-flag-checkered"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="datospedido">
+            <div class="row row-der-2">
+              <div class="col-1">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+              </div>
+              <div class="col-2">
+                <h4>Fecha de registro</h4>
+              </div>
+              <div class="col-3">
+                <span>11/02/2022 </span>
+              </div>
+              <div class="col-1">
+                <i class="fa-solid fa-clipboard-check"></i>
+              </div>
+              <div class="col-2">
+                <h4>Estado del pago</h4>
+              </div>
+              <div class="col-2">
+                <span> Pagado </span>
+              </div>
+            </div>
+            <div class="row row-der-2">
+              <div class="col-1">
+                <i class="fa-solid fa-dolly"></i>
+              </div>
+              <div class="col-2">
+                <h4>Fecha de entrega</h4>
+              </div>
+              <div class="col-3">
+                <span>18/02/2022 </span>
+              </div>
+              <div class="col-1">
+                <i class="fa-solid fa-coins"></i>
+              </div>
+              <div class="col-2">
+                <h4>Monto</h4>
+              </div>
+              <div class="col-2">
+                <span>S/ 218.32</span>
+              </div>
+            </div>
+            <div class="row row-der-2">
+              <div class="col-1 columma-a1">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <div class="col-2">
+                <h4>Lugar de entrega</h4>
+              </div>
+              <div class="col-3">
+                <span>Jr. Libertad #176 </span>
+              </div>
+              <div class="col-1 columma-a1">
+                <i class="fa-solid fa-truck-fast"></i>
+              </div>
+              <div class="col-2">
+                <h4>Costo de envío</h4>
+              </div>
+              <div class="col-2">
+                <span>S/ 8.00 </span>
+              </div>
+            </div>
+            <div class="row row-der-2">
+              <div class="col-1 columma-a1">
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+              <div class="col-2">
+                <h4>Tipo de documento</h4>
+              </div>
+              <div class="col-3">Boleta</div>
+            </div>
+          </div>
+          <div class="produ-lderech">
+            <div class="row row-der-3">
+              <div class="col-6 colum-a">
+                <h5><i class="fa-solid fa-box-open"></i> Productos</h5>
+              </div>
+              <div class="col-3 colum-b">
+                <a
+                routerLink="/mi-cuenta/pedidos/detalle/pd0000018264"
+                  type="button"
+                  class="btn btn-danger boton-repetir"
+                  >Repetir compra</a
+                >
+              </div>
+              <div class="col-2 colum-c">
+                <a
+                  routerLink="/mi-cuenta/pedidos/detalle/pd0000018264"
+                  type="button"
+                  class="btn btn-light dropdown-toggle boton-contraer"
+                  >Contraer</a
+                >
+              </div>
+            </div>
+            <div class="borde-cuadro">
+              <div class="row">
+                <div class="col-3 colum-d">
+                  <img src="/assets/images/product-loader.svg" alt="" />
+                </div>
+                <div class="col-6 colum-e">
+                  <h6>Gomitas Ambrosito/ AMBROSOLI X100g</h6>
+                  <br />
+                  <span>UND:</span><span class="txt-pre-uni">S/ 4.39</span
+                  ><br />
+                  <strong
+                    ><span>Total:</span
+                    ><span class="txt-pre-total">S/ 13.17</span></strong
+                  >
+                </div>
+                <div class="col-3 colum-f">
+                  <div class="bordecantid text-center">
+                    <h6 class="txtcant">Cantidad</h6>
+                    <label for="">3</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="borde-cuadro">
+              <div class="row">
+                <div class="col-3 colum-d">
+                  <img src="/assets/images/product-loader.svg" alt="" />
+                </div>
+                <div class="col-6 colum-e">
+                  <h6>Gomitas Ambrosito/ AMBROSOLI X100g</h6>
+                  <br />
+                  <span>UND:</span><span class="txt-pre-uni">S/ 4.39</span
+                  ><br />
+                  <strong
+                    ><span>Total:</span
+                    ><span class="txt-pre-total">S/ 13.17</span></strong
+                  >
+                </div>
+                <div class="col-3 colum-f">
+                  <div class="bordecantid text-center">
+                    <h6 class="txtcant">Cantidad</h6>
+                    <label for="">3</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="borde-cuadro">
+              <div class="row">
+                <div class="col-3 colum-d">
+                  <img src="/assets/images/product-loader.svg" alt="" />
+                </div>
+                <div class="col-6 colum-e">
+                  <h6>Gomitas Ambrosito/ AMBROSOLI X100g</h6>
+                  <br />
+                  <span>UND:</span><span class="txt-pre-uni">S/ 4.39</span
+                  ><br />
+                  <strong
+                    ><span>Total:</span
+                    ><span class="txt-pre-total">S/ 13.17</span></strong
+                  >
+                </div>
+                <div class="col-3 colum-f">
+                  <div class="bordecantid text-center">
+                    <h6 class="txtcant">Cantidad</h6>
+                    <label for="">3</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="borde-cuadro">
+              <div class="row">
+                <div class="col-3 colum-d">
+                  <img src="/assets/images/product-loader.svg" alt="" />
+                </div>
+                <div class="col-6 colum-e">
+                  <h6>Gomitas Ambrosito/ AMBROSOLI X100g</h6>
+                  <br />
+                  <span>UND:</span><span class="txt-pre-uni">S/ 4.39</span
+                  ><br />
+                  <strong
+                    ><span>Total:</span
+                    ><span class="txt-pre-total">S/ 13.17</span></strong
+                  >
+                </div>
+                <div class="col-3 colum-f">
+                  <div class="bordecantid text-center">
+                    <h6 class="txtcant">Cantidad</h6>
+                    <label for="">3</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- TODO: end root content  -->
+
+<!-- footer -->
+<md-footer></md-footer>
+<!-- end footer -->

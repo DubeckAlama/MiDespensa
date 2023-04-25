@@ -1,0 +1,247 @@
+<section class="container">
+  <div class="content-general">
+    <div class="logo text-center">
+      <div class="logo-container bg-primary">
+        <a routerLink=""
+          ><img src="/assets/images/logo-withe.svg" title="Logo Mi Despensa"
+        /></a>
+      </div>
+    </div>
+
+    <div class="box-content">
+      <div class="step-box">
+        <hr />
+        <div></div>
+        <div></div>
+        <div class="active"></div>
+      </div>
+
+      <h4>Dirección de entrega</h4>
+      <form [formGroup]="formDeliveryAddres" (ngSubmit)="register()">
+        <div class="entradas">
+          <div class="input-group">
+            <select
+              class="form-select"
+              aria-label="Departamento"
+              formControlName="departament"
+            >
+              <option selected value="">Departamento</option>
+              <option value="Lima">Lima</option>
+              <option value="Trujillo">Trujillo</option>
+              <option value="Ancash">Ancash</option>
+            </select>
+          </div>
+          <!-- validation messages | departament  -->
+          <ng-container *ngIf="ifFieldIsNotValid('departament')">
+            <div *ngIf="isValidBy('departament', 'required')" class="invalid">
+              Seleccione un departamento*
+            </div>
+          </ng-container>
+          <!-- validation  end messages  -->
+
+          <div class="input-group">
+            <select
+              class="form-select"
+              aria-label="Provincia"
+              formControlName="province"
+            >
+              <option selected value="">Provincia</option>
+              <option value="Lima">Lima</option>
+              <option value="Chiclayo">Chiclayo</option>
+              <option value="Huaraz">Huaraz</option>
+            </select>
+          </div>
+          <!-- validation messages | province  -->
+          <ng-container *ngIf="ifFieldIsNotValid('province')">
+            <div *ngIf="isValidBy('province', 'required')" class="invalid">
+              Seleccione una provincia*
+            </div>
+          </ng-container>
+          <!-- validation  end messages  -->
+
+          <div class="input-group">
+            <select
+              class="form-select"
+              aria-label="Distrito"
+              formControlName="district"
+            >
+              <option selected value="">Distrito</option>
+              <option value="San Isidro">San Isidro</option>
+              <option value="Santa Anita">Santa Anita</option>
+              <option value="Jesús María">Jesus María</option>
+            </select>
+          </div>
+          <!-- validation messages | district  -->
+          <ng-container *ngIf="ifFieldIsNotValid('district')">
+            <div *ngIf="isValidBy('district', 'required')" class="invalid">
+              Seleccione un distrito*
+            </div>
+          </ng-container>
+          <!-- validation  end messages  -->
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Dirección"
+            formControlName="address"
+          />
+          <!-- validation messages | address  -->
+          <ng-container *ngIf="ifFieldIsNotValid('address')">
+            <div *ngIf="isValidBy('address', 'required')" class="invalid">
+              Dirección, es un campo obligatorio*
+            </div>
+          </ng-container>
+          <!-- validation  end messages  -->
+        </div>
+
+        <div class="ubicame">
+          <div class="btn-accss">
+            <a
+              data-bs-toggle="modal"
+              data-bs-target="#ubicame"
+              type="button"
+              class="btn btn-danger"
+            >
+              Ubícame</a
+            >
+          </div>
+          <p>Usar GPS para identificar mi ubicación</p>
+        </div>
+
+        <div class="ayuda text-end">
+          <a href="#">¿Necesitas ayuda?</a>
+        </div>
+
+        <div class="text-center botones-grup">
+          <button
+            data-bs-toggle="modal"
+            [attr.data-bs-target]="isActive"
+            [disabled]="formDeliveryAddres.invalid"
+            type="submit"
+            class="btn btn-danger"
+          >
+            Registrar</button
+          ><br />
+          <strong>o</strong> <br />
+          <a type="button" class="btn btn-outline-danger">Iniciar sesión</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="modal" id="ubicame" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Ubica tu dirección en el mapa</h5>
+      </div>
+      <div class="modal-body">
+        <hr />
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Busca un lugar"
+        /><br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3901.3562450739887!2d-77.05487019999997!3d-12.087746499999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1665099423742!5m2!1ses-419!2spe"
+          width="100%"
+          height="350"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="modal-footer">
+        <a
+          routerLink="/auth/direccion-de-entrega"
+          type="button"
+          class="btn btn-outline-danger"
+          data-bs-dismiss="modal"
+          >Cancelar</a
+        >
+        <a
+          routerLink="/auth/direccion-de-entrega"
+          type="button"
+          class="btn btn-danger"
+          data-bs-dismiss="modal"
+          >Listo</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="boton-registrar">
+  <div class="modal" id="registrar" tabindex="-1">
+    <div class="modal-dialog">
+
+      <!-- <div class="modal-content" *ngIf="!registered">
+        <div class="text-center">
+          <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
+      </div> -->
+
+      <ng-container *ngIf="registered; else noRegistered">
+        <div class="modal-content">
+          <div class="text-center">
+            <img src="/assets/images/midespensa-logo.svg" alt="" />
+          </div>
+
+          <h4>¡Te has registrado exitosamente!</h4>
+
+          <form>
+            <div class="entradas">
+              <p>
+                En unos días, un vendedor llegará a tu negocio en
+                <b>{{ addressDefault }}</b> para verificar tus datos. Completado
+                este proceso regresa a Mi Despensa para comprar y disfrutar de
+                todas las promociones que tenemos para ti.
+              </p>
+            </div>
+
+            <div class="text-center botones-grup">
+              <a
+                type="button"
+                data-bs-dismiss="modal"
+                class="btn btn-danger"
+                (click)="toHome()"
+                >Regresar a inicio</a
+              ><br />
+            </div>
+          </form>
+        </div>
+      </ng-container>
+
+      <ng-template #noRegistered>
+        <div class="modal-content">
+          <div class="text-center">
+            <img src="/assets/images/midespensa-logo.svg" alt="" />
+          </div>
+
+          <h4>Hubo un problema con su registro.</h4>
+
+          <form>
+            <div class="entradas">
+              <p>Si esto persiste, contacte a atención al cliente.</p>
+            </div>
+
+            <div class="text-center botones-grup">
+              <a
+                routerLink=""
+                type="button"
+                data-bs-dismiss="modal"
+                class="btn btn-danger"
+                >Regresar a inicio</a
+              ><br />
+            </div>
+          </form>
+        </div>
+      </ng-template>
+
+    </div>
+  </div>
+</div>

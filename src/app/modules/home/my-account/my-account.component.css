@@ -1,0 +1,16 @@
+/*styles for my-account module | main */
+
+section .col-3 {
+  width: 28% !important;
+}
+
+section .col-8 {
+  width: 72% !important;
+}
+
+section .box-myaccount {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1030px;
+  padding-bottom: 40px;
+}

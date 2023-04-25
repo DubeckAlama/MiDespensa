@@ -1,0 +1,58 @@
+.tab-pane .row {
+  --bs-gutter-x: 0;
+  padding: 0 12px;
+}
+.tab-pane .row h6 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.box-info {
+  margin: 0px 10px;
+  margin-bottom: 14vh;
+  max-width: 800px;
+}
+.box-info h5 {
+  padding: 16px 20px;
+  background-color: #e8e8e8;
+  font-size: 19px;
+}
+/*------ boton nuevo reclamo---*/
+.btn-accss {
+  align-items: center;
+  border-radius: 50px;
+  padding: 4px 30px;
+  margin-top: 62px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  border-color: #e2032b;
+  --bs-btn-hover-bg: #e2032b;
+  --bs-btn-hover-border-color: #e2032b;
+  --bs-btn-active-bg: #e2032b;
+  --bs-btn-active-border-color: #e2032b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e2032b;
+}
+
+/*------información de reclamos---*/
+.box-info .borde-cuadro {
+  border: solid 1px #c2c2c2;
+  height: 108px;
+  padding: 16px 20px;
+  border-radius: 10px;
+  margin: 16px 14px;
+}
+.box-info .borde-cuadro .col-8 {
+  width: 65%;
+}
+.box-info h6 {
+  color: #6d6d6d;
+  font-size: 21px;
+  margin: 44px 0 34px 0;
+}
+
+.box-info p {
+  color: #9f9f9f;
+  font-size: 17px;
+}

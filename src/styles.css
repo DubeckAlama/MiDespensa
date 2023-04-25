@@ -1,0 +1,165 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("/assets/fonts/Lato-Regular.ttf");
+}
+
+body {
+  font-family: "Lato-Regular";
+}
+
+/* Header */
+header {
+  color: #ffb0b0;
+  padding: 10px 20px 5px 0;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+header a:hover {
+  color: #ffb0b0;
+}
+
+.top-header .container {
+  max-width: 100%;
+  padding: 0px 30px !important;
+}
+
+/* Header Efect Scroll*/
+.top-header.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+}
+.top-header.fixed .bg-gray {
+  background-color: #f9f9f9b5;
+  backdrop-filter: blur(5px);
+}
+
+/*color titulo*/
+.text-primary {
+  color: #e2032b !important;
+}
+
+/* Background */
+.bg-primary,
+nav .btn:active {
+  background-color: #e2032b !important;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-gray {
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.contain-er {
+  width: auto;
+  padding: 0 24px 0 36px;
+}
+/* titles index root  */
+.container mark {
+  position: relative;
+  background-color: transparent;
+  color: inherit;
+  z-index: 1;
+  text-shadow: 0px 2px 0px #ffffff;
+}
+
+.container mark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 20px;
+  background: url(/assets/images/curve-line.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+/* border n1 */
+.border-primary {
+  border: #9f9f9f solid 1.8px !important;
+}
+
+/*whatsapp contact*/
+.container .btn-whatsapp {
+  width: 80px;
+  border-radius: 100px;
+  bottom: 50px;
+  right: 50px;
+  box-shadow: 0 0.3rem 0.25rem rgba(0, 0, 0, 0.3);
+}
+.container .btn-whatsapp a {
+  width: 80px;
+  border-radius: 50px;
+  background-color: #ffffffb6;
+  padding: 20px;
+  border: transparent;
+}
+.container .btn-whatsapp i {
+  font-size: 40px;
+}
+
+.container .btn-whatsapp .btn {
+  --bs-btn-color: #39bd49;
+  --bs-btn-hover-bg: #39bd49;
+  --bs-btn-hover-border-color: #39bd49;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: #39bd49;
+  --bs-btn-active-color: #fff;
+  --bs-btn-hover-color: #fff;
+}
+
+.modal-backdrop {
+  --bs-backdrop-bg: white;
+}
+
+/* styles for validation messages */
+.invalid {
+  margin: 0.5rem;
+  font-size: smaller;
+  color: #e62b4d;
+}
+
+.feedback-message {
+  background-color: #e2032b;
+  color: white;
+  padding: 5px 0px 5px 10px;
+  border-radius: 0.45rem;
+  font-weight: lighter !important;
+  font-size: small;
+}
+
+@media(max-width: 600px){
+  .esconder-menu{
+    display: none;
+  }
+ .header-dif {
+    color: #ffb0b0;
+    height: 50px;
+    position: static ;
+    padding: 3px 20px 5px 0;
+  }
+}
+
+
+

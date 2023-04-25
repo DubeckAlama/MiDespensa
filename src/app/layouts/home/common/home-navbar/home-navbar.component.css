@@ -1,0 +1,197 @@
+/* Menu */
+nav .menu-container {
+  display: flex;
+  position: relative;
+  height: 70px;
+  padding-top: 11px;
+}
+nav .logo {
+  width: 120px;
+}
+nav .logo .logo-container {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  position: absolute;
+  border: 6px #ffffff solid;
+  top: -32px;
+}
+nav .logo .logo-container img {
+  width: 66px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+nav .nav-link,
+nav .nav-link:hover,
+nav .nav-link:visited {
+  color: #333333;
+  font-size: 17px;
+}
+nav .nav-link.active {
+  color: #fff !important;
+}
+
+/*header-agregados*/
+
+nav .row {
+  width: 100%;
+  --bs-gutter-x: 1rem;
+  padding-left: 15px;
+  padding-right: 14px;
+}
+nav .row .col-2 {
+  width: 8%;
+}
+nav .row .col-5 {
+  width: 40%;
+}
+nav .row .col {
+  text-align: -webkit-right;
+}
+
+nav .buscador {
+  width: 100%;
+  max-width: 524px;
+  margin-left: 10px;
+  border: #e2032b solid 2px;
+  border-radius: 28px;
+  padding: 6px 20px;
+  background-color: #ffffff;
+}
+nav input {
+  border: transparent;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 418px;
+  font-size: 18px;
+}
+nav input:focus-visible {
+  outline: 0px;
+}
+nav .buscador .col-1 {
+  padding-top: 2px;
+}
+
+nav .buscador .col-1 a {
+  margin-left: 15px;
+}
+
+.mouse-click {
+  cursor: pointer;
+}
+
+/*Header-informacion- sesión iniciada*/
+
+nav .btn-access {
+  width: 580px;
+}
+nav .btn-access .btn {
+  /* padding: 4px 26px; */
+  border-radius: 30px;
+  font-size: 20px;
+  margin-right: 4px;
+  border-color: #e2032b;
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: #e2032b;
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-border-color: #e2032b;
+}
+
+nav .btn-access .btn:hover {
+  color: #e2032b !important;
+}
+.count {
+  background-color: #68b738;
+  padding: 4px;
+  width: 29px;
+  height: 22px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+nav i {
+  color: #e2032b;
+  font-size: 20px;
+  margin: 0 12px 0 5px;
+}
+
+nav .btn-espacio {
+  margin: 0 5px;
+  font-size: 22px;
+}
+
+/*Menu*/
+.nav-pills {
+  --bs-nav-pills-border-radius: 0;
+  /* --bs-nav-pills-link-active-color: #fff; */
+  --bs-nav-pills-link-active-bg: #e2032b;
+  background-color: #f7f7f7e4;
+}
+
+.nav .button-todo {
+  padding-right: 120px;
+}
+
+/*Menú todo*/
+.menu-todo .button-menu-todo {
+  width: 230px;
+  text-align: left;
+  padding: 8px 0px 8px 24px;
+  margin-left: 20px;
+}
+.menu-todo .nav {
+  background-color: #c4c4c4;
+}
+.menu-todo .nav .nav-link {
+  color: black;
+}
+.menu-todo .nav .nav-link.active {
+  background-color: #ebebeb;
+  border-radius: 30px 0 0 30px;
+}
+.menu-todo .btn-menu-todo-up {
+  margin-top: 20px;
+}
+.menu-todo .btn-menu-todo-down {
+  margin-bottom: 70px;
+}
+.menu-todo {
+  background-color: #ebebeb;
+}
+.menu-todo .tab-content .row {
+  width: 1100px;
+  margin: 40px 0 20px 30px;
+}
+.menu-todo .tab-content .row .col-2 {
+  width: 24.5%;
+}
+.menu-todo .row .col-2 h6 {
+  font-size: 17px;
+  font-weight: bold;
+}
+.menu-todo .row .col-2 a {
+  color: black;
+  text-decoration: none;
+  margin-top: 20px;
+}
+.menu-todo .tab-content .btn-accss a {
+  border-radius: 30px;
+  width: 120px;
+  border-color: #e2032b;
+  --bs-btn-hover-bg: #e2032b;
+  --bs-btn-hover-border-color: #e2032b;
+  --bs-btn-active-bg: #e2032b;
+  --bs-btn-active-border-color: #e2032b;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #e2032b;
+}
+.name_addres{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 290px;
+}

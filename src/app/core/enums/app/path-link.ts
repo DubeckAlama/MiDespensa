@@ -1,0 +1,50 @@
+export enum Pathlink {
+  // root / home page
+  affiliate = '/afiliate',
+  affiliate_register = '/auth/register',
+  frequent_questions = '/preguntas-frecuentes',
+  terms_and_conditions = '/terminos-y-condiciones',
+  complaints_book = '/libro-de-reclamaciones',
+  about = '/acerca-de',
+  // marketing pages
+  bonificaciones = '/bonificaciones',
+  bonuses = '/bonificaciones',
+  bonus_cart = '/bonificaciones/carrito',
+  descuentos = '/descuentos',
+  discounts = '/descuentos',
+  promociones = '/promociones',
+  promotions = '/promociones',
+  // points module and pages
+  points_promotions = '/mis-puntos',
+  points_history = '/mis-puntos/historial',
+  points_earn = '/mis-puntos/ganar-puntos',
+  // shopping cart module
+  shopping_cart = '/carrito',
+  // auth
+  login = '/auth/login',
+  register = '/auth/register',
+  // my_account
+  my_account = '/mi-cuenta',
+  personal_information = '/mi-cuenta/perfil',
+  delivery_address = '/mi-cuenta/direccion-de-entrega',
+  billing_address = '/mi-cuenta/direccion-de-factura',
+  my_orders = '/mi-cuenta/pedidos',
+  wish_list = '/mi-cuenta/lista-de-deseos',
+  claims = '/mi-cuenta/reclamos',
+  // cotegories
+  categories = '/categoria',
+  groceries = '/categoria/abarrotes',
+  abarrotes = '/categoria/abarrotes',
+  confectionery = '/categoria/confiteria',
+  confiteria = '/categoria/confiteria',
+  home_care = '/categoria/cuidado-del-hogar',
+  cuidado_del_hogar = '/categoria/cuidado-del-hogar',
+  personal_care = '/categoria/cuidado-personal',
+  cuidado_personal = '/categoria/cuidado-personal',
+  baby_care = '/categoria/cuidado-del-bebe',
+  cuidado_del_bebe = '/categoria/cuidado-del-bebe',
+  spirits = '/categoria/licores',
+  licores = '/categoria/licores',
+  pets = '/categoria/mascotas',
+  mascotas = '/categoria/mascotas',
+}

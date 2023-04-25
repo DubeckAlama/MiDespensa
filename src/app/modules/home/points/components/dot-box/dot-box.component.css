@@ -1,0 +1,48 @@
+.box-izquierdo{
+  border: #a8a8a8 solid 1px;
+}
+.cuadro-titulo{
+  background: #c8c8c8;
+  border-bottom: 4px solid;
+  border-bottom-color: #cacaca;
+  padding: 16px 0 4px 26px;
+}
+.cuadro-titulo h5{
+  font-size: 18px;
+}
+.cuadro-lista{
+  background: #F5F5F5;
+  padding: 24px 25px 30px 29px;
+}
+
+.cuadro-lista h6{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.cuadro-lista .totalpuntos-acumulad{
+  font-size: 32px;
+  color: #68B738;
+  font-weight: bold;
+  margin: 28px 0;
+}
+.cuadro-lista .parraf{
+  color: #919191;
+}
+
+.cuadro-lista a{
+  width: 180px;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 6px;
+  margin: 6px 18px ;
+}
+.cuadro-lista .btn-danger {
+  --bs-btn-bg: #E2032B !important;
+}
+
+.cuadro-lista .btn-outline-danger{
+  --bs-btn-hover-bg: #E2032B !important;
+  --bs-btn-border-color: #E2032B !important;
+  margin-top: 56px;
+}

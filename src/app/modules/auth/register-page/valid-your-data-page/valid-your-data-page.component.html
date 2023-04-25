@@ -1,0 +1,171 @@
+<section class="container">
+  <div class="content-general">
+    <div class="logo text-center">
+      <div class="logo-container bg-primary">
+        <a routerLink=""
+          ><img src="/assets/images/logo-withe.svg" title="Logo Mi Despensa"
+        /></a>
+      </div>
+    </div>
+
+    <div class="box-content">
+      <div class="step-box">
+        <hr />
+        <div></div>
+        <div class="active"></div>
+        <div></div>
+      </div>
+      <h4>Valida tus datos</h4>
+
+      <form [formGroup]="formYourData" (ngSubmit)="continue()">
+        <div class="entradas">
+          <div class="input-group">
+            <select
+              class="form-select"
+              aria-label="Tipo de documento"
+              formControlName="document_type_id"
+            >
+              <option selected value="0">Tipo de documento...</option>
+              <ng-container *ngFor="let type of documents$ | async">
+                <option value="{{ type.id }}">{{ type.name }}</option>
+              </ng-container>
+            </select>
+          </div>
+          <!-- validation messages | type document  -->
+          <ng-container *ngIf="ifFieldIsNotValid('document_type_id')">
+            <div *ngIf="isValidBy('document_type_id', 'min')" class="invalid">
+              Seleccione el tipo de documento*
+            </div>
+          </ng-container>
+          <!-- end validation-->
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Número de Documento"
+            formControlName="document"
+          />
+          <!-- validation messages | document -->
+          <ng-container *ngIf="ifFieldIsNotValid('document')">
+            <div *ngIf="isValidBy('document', 'required')" class="invalid">
+              Número de documento, es un campo obligatorio*
+            </div>
+            <div *ngIf="isValidBy('document', 'pattern')" class="invalid">
+              El número del documento no tiene un formato válido.
+            </div>
+            <div *ngIf="isValidBy('document', 'exists')" class="invalid">
+              Este documento ya <b>está registrado</b>.
+            </div>
+          </ng-container>
+          <!-- end validation-->
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Nombres"
+            formControlName="names"
+          />
+          <!-- validation messages | names  -->
+          <ng-container *ngIf="ifFieldIsNotValid('names')">
+            <div *ngIf="isValidBy('names', 'required')" class="invalid">
+              Nombres, es un campo obligatorio*
+            </div>
+          </ng-container>
+          <!-- end validation-->
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Apellidos"
+            formControlName="last_names"
+          />
+          <!-- validation messages | last_names  -->
+          <ng-container *ngIf="ifFieldIsNotValid('last_names')">
+            <div *ngIf="isValidBy('last_names', 'required')" class="invalid">
+              Apellidos, es un campo obligatorio*
+            </div>
+          </ng-container>
+          <!-- end validation-->
+
+          <div class="input-group">
+            <select
+              formControlName="sex"
+              class="form-select"
+              aria-label="Seleccione su género"
+            >
+              <option selected value="">Género...</option>
+              <ng-container *ngFor="let sex of sexes">
+                <option value="{{ sex.name }}">{{ sex.name }}</option>
+              </ng-container>
+            </select>
+          </div>
+          <!-- validation messages | sex  -->
+          <ng-container *ngIf="ifFieldIsNotValid('sex')">
+            <div *ngIf="isValidBy('sex', 'required')" class="invalid">
+              Seleccione su género*
+            </div>
+          </ng-container>
+          <!-- end validation-->
+
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Fecha de nacimiento día/mes/año"
+            formControlName="birth_date"
+          />
+          <!-- validation messages | sex  -->
+          <ng-container *ngIf="ifFieldIsNotValid('birth_date')">
+            <div *ngIf="isValidBy('birth_date', 'required')" class="invalid">
+              Fecha de nacimiento, es un campo obligatorio*
+            </div>
+            <div *ngIf="isValidBy('birth_date', 'pattern')" class="invalid">
+              Por favor, escriba una fecha válida | día/mes/año.
+            </div>
+          </ng-container>
+          <!-- end validation-->
+
+          <div class="input-group">
+            <select
+              class="form-select"
+              aria-label="¿Cómo nos conociste?"
+              formControlName="answer"
+            >
+              <option selected value="">¿Cómo nos conociste?</option>
+              <ng-container *ngFor="let know of knows">
+                <option value="{{ know.answer }}">{{ know.answer }}</option>
+              </ng-container>
+            </select>
+          </div>
+          <!-- validation messages | sex  -->
+          <ng-container *ngIf="ifFieldIsNotValid('answer')">
+            <div *ngIf="isValidBy('answer', 'required')" class="invalid">
+              Nos interesa saber su respuesta.
+            </div>
+          </ng-container>
+          <!-- end validation-->
+        </div>
+
+        <div class="ayuda text-end">
+          <a href="#">¿Necesitas ayuda?</a>
+        </div>
+
+        <div class="text-center botones-grup">
+          <button
+            [disabled]="formYourData.invalid"
+            type="submit"
+            class="btn btn-danger"
+          >
+            Continuar</button
+          ><br />
+          <strong>o</strong> <br />
+          <a
+            routerLink="/auth/login"
+            type="button"
+            class="btn btn-outline-danger"
+            >Iniciar sesión
+          </a>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

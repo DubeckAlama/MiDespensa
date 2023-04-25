@@ -1,0 +1,58 @@
+/*footer contenido*/
+footer .container-footer {
+  width: 100%;
+  display: inline-block;
+  color: #ffffff;
+  margin: 10px 0 0 10px;
+  vertical-align: top;
+  padding-left: 22px;
+  text-align:left;
+}
+footer .container-footer img {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 120px;
+  padding: 0 6px;
+}
+
+footer .container-footer h5 {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+footer .container-footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+footer .container-footer i {
+  margin-right: 16px;
+}
+footer .container-footer .fa-facebook-f {
+  font-size: 40px;
+  margin: 8px 30px 10px 0;
+}
+footer .container-footer .fa-instagram {
+  font-size: 45px;
+  margin: 8px 0px 10px 30px;
+}
+footer .copyright {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+
+/* custom footer */
+.info-2 {
+  padding-left: 25px !important;
+}
+.hora-2 {
+  padding-left: 28px !important;
+}
+.sig-2 {
+  padding-left: 31.5px !important;
+}
+
+.fb-2 {
+  margin: 8px 33px 10px 0 !important;
+}

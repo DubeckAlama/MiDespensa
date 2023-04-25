@@ -1,0 +1,59 @@
+<section class="container">
+  <div class="content-general">
+    <div class="logo text-center">
+      <div class="logo-container bg-primary">
+        <a routerLink=""
+          ><img src="/assets/images/logo-withe.svg" atl="Logo Mi Despensa"
+        /></a>
+      </div>
+    </div>
+
+    <div class="box-content">
+      <div class="step-box">
+        <hr />
+        <div class="active"></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <h4>Valida tu identidad</h4>
+      <form>
+        <div class="entradas">
+          <div class="input-group">
+            <select
+              class="form-select dropdown-toggle"
+              id="inputGroupSelect04"
+              aria-label="Example select with button addon"
+            >
+              <option selected>Tipo de documento...</option>
+              <option value="1">DNI</option>
+              <option value="2">Pasaporte</option>
+              <option value="3">Carnet de extranjería</option>
+            </select>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Número de Documento"
+            required="required"
+          />
+        </div>
+
+        <div class="ayuda text-end">
+          <a href="#">¿Necesitas ayuda?</a>
+        </div>
+
+        <div class="text-center botones-grup">
+          <button type="button" routerLink="/auth/verifica-tu-telefono" class="btn btn-danger">Continuar</button><br />
+          <strong>o</strong> <br />
+          <a
+            routerLink="/auth/login"
+            type="button"
+            class="btn btn-outline-danger"
+            >Iniciar sesión</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

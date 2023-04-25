@@ -1,0 +1,141 @@
+body{
+  background-color: #EFEFEF;
+}
+
+/*contenido de formulario*/
+section .content-general{
+  width: 100%;
+  margin: 100px auto;
+  max-width: 800px;
+  padding: 18px;
+
+}
+
+section .box-content{
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  max-width: 570px;
+  padding: 70px 38px 20px 38px;
+  border: 1px solid #cacaca;
+  border-radius: 20px ;
+}
+
+section .logo{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100px
+
+}
+section .logo .logo-container{
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  position: absolute;
+  top: 60px;
+  box-shadow: 0 .3rem .25rem rgba(0,0,0,.300);
+}
+section .logo .logo-container img{
+  width: 58px;
+  position: absolute;
+  top: 56%;
+  left: 50.5%;
+  transform: translate(-50%,-50%);
+}
+/*menu*/
+section .content-general .step-box{
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+section .content-general .step-box hr{
+  width: 100%;
+  position: absolute;
+}
+
+section .content-general .step-box div{
+  position: relative;
+  border: #E2032B 4px solid;
+  border-radius: 50%;
+  padding: 6px;
+  display: inline-block;
+  background-color: white;
+}
+section .content-general .step-box div.active{
+  background-color: #E2032B;
+}
+
+section .content-general hr{
+  border: 2px solid #E2032B;
+  opacity: .75;
+}
+/*--------------------------*/
+
+section .content-general h4{
+  color: #E62B4D;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 23px;
+}
+
+section .content-general .entradas{
+  width: 100%;
+  margin: 0 auto;
+  max-width: 382px;
+
+}
+
+section .content-general input{
+  color: #828282;
+  background-color: #EFEFEF;
+  margin-top: 14px;
+}
+section .content-general .form-select{
+  color: #828282;
+  background-color: #EFEFEF;
+  margin-top: 14px;
+}
+
+
+section .content-general .ayuda{
+  padding-top: 40px;
+}
+section .content-general .ayuda a{
+  color: #828282d5;
+  line-height: 30px;
+}
+section .content-general .botones-grup{
+  margin-top: 12px;
+}
+section .content-general button{
+  width: 226px;
+  border-radius: 50px;
+  font-size: 17px;
+  height: 48px;
+  margin: 12px ;
+}
+section .content-general .botones-grup a{
+  width: 226px;
+  border-radius: 50px;
+  font-size: 17px;
+  padding: 9px;
+  margin: 12px ;
+}
+section .box-content strong{
+  font-size: 19px;
+}
+section .content-general .text-center .btn-danger {
+  --bs-btn-bg: #E2032B !important;
+}
+section .content-general .text-center .btn-outline-danger{
+  font-weight: bold;
+  --bs-btn-hover-bg: #E2032B !important;
+  --bs-btn-border-width: 0.121rem;
+  --bs-btn-border-color: #E2032B !important;
+}

@@ -1,0 +1,13 @@
+<div class="row">
+  <ng-container *ngIf="productsPoints.length > 0; else message">
+    <div class="col-4" *ngFor="let item of productsPoints">
+      <md-product-card type-card="points"></md-product-card>
+    </div>
+    <div class="text-center btn-col-8">
+      <a href="" type="submit" class="btn btn-danger">Cargar más</a>
+  </div>
+  </ng-container>
+  <ng-template #message>
+    <p>Not found products</p>
+  </ng-template>
+</div>
