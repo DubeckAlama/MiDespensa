@@ -4,6 +4,7 @@ nav .menu-container {
   position: relative;
   height: 70px;
   align-items: center;
+
 }
 nav .logo {
   width: 120px;
@@ -57,15 +58,38 @@ nav .nav-link:visited {
   font-size: 17px;
 }
 
-
-
 @media(max-width: 600px){
+  nav .menu{
+    display: none;
+  }
+}
+
+@media(max-width: 450px){
   nav .menu{
     display: none;
   }
 
   nav .btn-access {
-    width: 400px;
+
+    width: 50%;
+    align-items:end;
+
+  }
+
+  nav .btn-access .btn {
+    width: 35%;
+    height: 30px ;
+    display:flexbox;
+    padding: 4px 12px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 20px;
+    border-color: #e2032b;
+    --bs-btn-hover-bg: #e2032b;
+    --bs-btn-hover-border-color: #e2032b;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #e2032b;
   }
 
 }
