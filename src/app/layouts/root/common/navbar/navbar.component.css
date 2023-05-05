@@ -1,10 +1,9 @@
 /* Menu */
 nav .menu-container {
-  display: inline-flex;
+  display: flex;
   position: relative;
   height: 70px;
   align-items: center;
-
 }
 nav .logo {
   width: 120px;
@@ -27,18 +26,18 @@ nav .logo .logo-container img {
 }
 nav .menu {
   width: calc(100% - 436px);
-  padding-left: 12px;
+  padding-left: 42px;
   font-weight: 500;
 }
 nav .btn-access {
-  width: 280px;
+  width: 315px;
 }
 nav .btn-access .btn {
-  padding: 4px 28px;
+  padding: 4px 38px;
   border-radius: 30px;
   font-weight: 500;
   font-size: 20px;
-  margin-right: 24px;
+  margin-right: 4px;
   border-color: #e2032b;
   --bs-btn-hover-bg: #e2032b;
   --bs-btn-hover-border-color: #e2032b;
@@ -46,7 +45,7 @@ nav .btn-access .btn {
   --bs-btn-active-border-color: #e2032b;
 }
 .mr-7 {
-  margin-right: 1px !important;
+  margin-right: 7px !important;
 }
 nav .btn-access .btn:hover {
   color: #ffffff !important;
@@ -69,22 +68,27 @@ nav .nav-link:visited {
     display: none;
   }
 
+  .btn {
+    display: inline-block;
+    margin-right: -30px;
+  }
+
   nav .btn-access {
 
-    width: 50%;
+    width: 100%;
     align-items:end;
 
   }
 
   nav .btn-access .btn {
-    width: 35%;
+    width: 80px;
     height: 30px ;
-    display:flexbox;
-    padding: 4px 12px;
+
+    padding: 4px 10px;
     border-radius: 30px;
     font-weight: 500;
     font-size: 15px;
-    margin-right: 20px;
+    margin-right: -15px;
     border-color: #e2032b;
     --bs-btn-hover-bg: #e2032b;
     --bs-btn-hover-border-color: #e2032b;

@@ -57,17 +57,51 @@ section .aside-funciona .como-func-contenido p{
   padding-right: 42px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 450px) {
   section .aside-funciona .como-func-img {
     width: 0;
     height: 0;
     padding-top: 0px;
-    text-align: end;
-    display: block;
   }
 
   img{
     display: none ;
   }
+
+  /* ?? */
+  section .aside-funciona .como-func-contenido{
+    width: 99%;
+    height: auto;
+    padding: 25px 5px 5px 10px;
+    margin-left: 5px;
+    display:inline-block;
+  }
+  section .aside-funciona .como-func-contenido h2{
+    font-weight: bold;
+    font-size: 2.38rem;
+    padding: 5px;
+    text-align:center;
+  }
+  section .como-func-contenido .como-func-conten-pasos{
+    padding-top: 8px;
+    display: flexbox;
+  }
+
+  .aside-funciona .como-func-contenido h5{
+    font-size: 1.6rem;
+    font-weight: 600;
+    opacity: .89;
+    padding-top: 8px;
+  }
+  .aside-funciona .como-func-contenido .numbers{
+    padding-top: 22px;
+  }
+
+  section .aside-funciona .como-func-contenido p{
+    font-size: 16.5px;
+    font-weight: 500;
+    padding-right: 5px;
+  }
+
 
 }
