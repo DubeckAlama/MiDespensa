@@ -64,3 +64,12 @@ section.t-pregunt p{
   padding: 12px 4px 40px 4px;
   margin: 0px;
 }
+
+@media (max-width: 450px) {
+  section.t-pregunt .tienes-preguntas{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 15px;
+  }
+}
