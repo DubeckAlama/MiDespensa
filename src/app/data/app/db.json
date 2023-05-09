@@ -23,6 +23,18 @@
       "birth_date": "26/04/1996",
       "verified": true,
       "id": 2
+    },
+    {
+      "phone": "989090",
+      "password": "10620264",
+      "names": "Dubeck",
+      "last_names": "Alama",
+      "document_type_id": "1",
+      "document": "10620264",
+      "sex": "Varón",
+      "birth_date": "26/04/1996",
+      "verified": true,
+      "id": 3
     }
   ],
   "addresses": [
@@ -41,6 +53,14 @@
       "district": "Santa Anita",
       "address": "Santa anita #168 - urbanizacion de monterrico",
       "id": 2
+    },
+    {
+      "userId": 3,
+      "departament": "Lima",
+      "province": "Lima",
+      "district": "San Martin de Porres",
+      "address": "Av. Los hornos #565 - Comas",
+      "id": 3
     }
   ],
   "knows": [
