@@ -5,28 +5,40 @@ import { Router } from '@angular/router';
 import { Credentials } from '@app/core/interfaces';
 import { ValidationsService } from '@app/core/validators';
 import { AuthService } from '@app/core/auth';
+
 @Component({
   selector: 'md-login-page',
   templateUrl: './login-page.component.html',
   styleUrls: ['./login-page.component.css'],
 })
+
 export class LoginPageComponent implements OnInit {
   userNotFound!: boolean;
   unVerifiedUser!: boolean;
   VerifiedUser!: boolean;
   userName!: string;
 
-  formLogin: FormGroup = this._fb.group({
+  formLogin: FormGroup ;
+
+  /* corregido : 09-05-2023
+  formLogin: FormGroup = this._fb?.group({
     phone: ['', [Validators.required, Validators.pattern(this._vs.regexPhone)]],
     password: ['', [Validators.required]],
   });
+*/
 
   constructor(
     private _fb: FormBuilder,
     private _vs: ValidationsService,
     private _authService: AuthService,
     private _router: Router
-  ) {}
+  ) {
+    this.formLogin = this._fb.group({
+      phone: ['', [Validators.required, Validators.pattern(this._vs.regexPhone)]],
+      password: ['', [Validators.required]],
+    })
+  }
+
 
   ngOnInit(): void {
     this._vs.setFormGroup = this.formLogin;
