@@ -255,3 +255,15 @@ section .box-content strong {
     top: -110px;
   }
 }
+
+
+/*responsive*/
+@media (max-width: 500px) {
+/*boton ubicame*/
+.modal {
+  --bs-modal-width: 900px;
+  --bs-modal-margin: 0.75rem;
+  --bs-modal-padding: 2rem;
+  --bs-modal-header-padding: 1rem 2rem;
+}
+}
