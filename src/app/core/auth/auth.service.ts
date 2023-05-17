@@ -79,6 +79,9 @@ export class AuthService {
 
     return this._http.get<ResUser[]>(`${this._url}/users`, { params }).pipe(
       switchMap((response: ResUser[]) => {
+
+        console.log(response);
+
         // if user not found
         if (!response.length) {
           this.status = false;

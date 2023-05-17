@@ -1,3 +1,5 @@
+import { from } from 'rxjs';
+
 // APP
 export { ListingBox, SubItem } from './app/listing-box.interface';
 export { Breadcrumbs, TypeBreadcrumbs } from './app/breadcrumbs.interface';
@@ -9,10 +11,12 @@ export { TypeDocument } from './app/type-document.interface';
 export { Category, SubCategory, Tag } from './app/category.interface';
 export { Product } from './app/product.interface';
 export { TypeProductCard } from './app/product.interface';
+export { Users } from './app/users.interface'
 
 // APP > API
 export { ResCategories } from './app/api/categories-response.interface';
 export { ResUser } from './app/api/user-response.interface';
+
 
 // Home
 export { SupplierBrands } from './home/supplier-brands.interface';
@@ -31,3 +35,6 @@ export {
 
 // validators
 export { validateError } from './validators/validations.interface';
+
+
+

@@ -188,7 +188,7 @@ section .aside-catalogo h4{
 }
 
 /*responsive*/
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   .cont, #esconder {
     display: flex;
     flex-wrap: wrap;

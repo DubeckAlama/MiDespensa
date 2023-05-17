@@ -116,6 +116,14 @@ section .aside-cobertura .regiones-lista a{
   padding: 12px 20px;
 }
 
+#mostrarlink{
+  display:block;
+}
+
+#esconderlink{
+  display:none;
+}
+
 @media (max-height: 900px) {
   .modal {
     top: -110px;
@@ -160,8 +168,12 @@ section .aside-cobertura .regiones-lista a{
   }
 
 
+  #mostrarlink{
+    display:none;
+  }
 
-
-
+  #esconderlink{
+    display:block;
+  }
 
 }
