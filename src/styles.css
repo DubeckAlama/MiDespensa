@@ -161,5 +161,16 @@ nav .btn:active {
   }
 }
 
+@media(max-width: 450px){
+  .esconder-menu{
+    display: none;
+  }
+ .header-dif {
+    color: #ffb0b0;
+    height: 50px;
+    position: static ;
+    padding: 3px 20px 5px 0;
+  }
+}
 
 

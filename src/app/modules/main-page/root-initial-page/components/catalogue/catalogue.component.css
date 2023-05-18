@@ -182,13 +182,13 @@ section .aside-catalogo h4{
   opacity: 1;
 }
 
-/* COL */
+
 #esconder{
   display:none;
 }
 
 /*responsive*/
-@media (max-width: 500px) {
+@media (max-width: 450px) {
   .cont, #esconder {
     display: flex;
     flex-wrap: wrap;

@@ -131,7 +131,7 @@ section .aside-cobertura .regiones-lista a{
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
 
   section .aside-cobertura {
     width: 490px;

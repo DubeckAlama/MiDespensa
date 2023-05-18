@@ -15,7 +15,7 @@ export const dataUsers: User[] = [
   },
   {
       "phone": "989090636",
-      "names": "Dubeck",
+      "names": "Dubeck Alexander",
       "last_names": "Alama",
       "document_type_id": 1,
       "document": "10620264",
